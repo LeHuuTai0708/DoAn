@@ -27,6 +27,6 @@ export class FirstPage {
   ChuyenPage()
   {
     console.log('ionViewDidLoad FirstPage');
-    this.navCtrl.push(HomePage);
+    this.navCtrl.setRoot(TabsPage);
   }
 }

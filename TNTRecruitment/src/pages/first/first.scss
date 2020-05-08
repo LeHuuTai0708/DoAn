@@ -36,12 +36,16 @@ ion-col.Lo-gin {
   }
   
   ion-img.logo{
-    width: 82%;
+    width: 91%;
     height: 375px;
     padding:0;
     text-align: center;
   }
   ion-buttons.button{
-      width: 80%;
+      width: 100%;
+  }
+
+  button.custombutton{
+    width: 100%;
   }
 }
