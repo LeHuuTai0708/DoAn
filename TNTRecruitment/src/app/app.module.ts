@@ -1,3 +1,4 @@
+import { LoginPage } from './../pages/login/login';
 import { CandidatePage } from './../pages/candidate/candidate';
 import { NotificationPage } from './../pages/notification/notification';
 import { RecruitmentPage } from './../pages/recruitment/recruitment';
@@ -24,6 +25,7 @@ import { RegistrationPage } from '../pages/registration/registration';
     NotificationPage,
     CandidatePage,
     FirstPage,
+    LoginPage,
     RegistrationPage
 
   ],
@@ -41,6 +43,7 @@ import { RegistrationPage } from '../pages/registration/registration';
     NotificationPage,
     CandidatePage,
     FirstPage,
+    LoginPage,
     RegistrationPage
   ],
   providers: [

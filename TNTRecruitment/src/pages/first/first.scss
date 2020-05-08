@@ -17,20 +17,12 @@ ion-col.Lo-gin {
     max-height: 200px;
     padding-top: 200px;
     text-align: center;
+    padding-bottom: 10px;
   }
 
-  ion-col.D-K {
+  ion-row.marginRow {
     width: 100%;
     height: 200px;
-    max-height: 40px;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  ion-col.D-N {
-    width: 100%;
-    height: 200px;
-    max-height: 50px;
     text-align: center;
     margin-top: 20px;
   }
@@ -42,7 +34,11 @@ ion-col.Lo-gin {
     text-align: center;
   }
 
-  button.custombutton{
+  button.custom{
+    width: 100%;
+    margin-top: 30px;
+  }
+  ion-buttons.custombuttons{
     width: 100%;
   }
 }

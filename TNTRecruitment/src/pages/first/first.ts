@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 import { HomePage } from '../home/home';
 import { RegistrationPage } from '../registration/registration';
+import { LoginPage } from '../login/login';
 
 /**
  * Generated class for the FirstPage page.
@@ -27,7 +28,7 @@ export class FirstPage {
 
   Login()
   {
-    this.navCtrl.setRoot(TabsPage);
+    this.navCtrl.push(LoginPage);
   }
   Registration(){
     this.navCtrl.push(RegistrationPage);
