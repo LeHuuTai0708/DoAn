@@ -1,0 +1,17 @@
+page-home {
+    ion-col.my-thin-col {
+        width: 50%;
+        height: 200px;
+        max-height: 200px;
+        padding:0;
+        text-align: center;
+      }
+      div.my-round{
+          background-color: red($color: #ff0000);
+          border-radius: 10px;
+          width: 50px;
+          margin: 0 auto;
+          text-align: center;
+          height: 50px;
+      }
+}
