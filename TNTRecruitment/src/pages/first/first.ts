@@ -1,3 +1,4 @@
+import { LoginPage } from './../login/login';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
@@ -24,9 +25,11 @@ export class FirstPage {
     console.log('ionViewDidLoad FirstPage');
   }
 
-  ChuyenPage()
+  Login()
   {
-    console.log('ionViewDidLoad FirstPage');
-    this.navCtrl.setRoot(TabsPage);
+    this.navCtrl.push(LoginPage);
+  }
+  handleEmailValue(a : any){
+
   }
 }

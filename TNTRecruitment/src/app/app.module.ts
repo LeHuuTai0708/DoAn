@@ -1,3 +1,4 @@
+import { LoginPage } from './../pages/login/login';
 import { CandidatePage } from './../pages/candidate/candidate';
 import { NotificationPage } from './../pages/notification/notification';
 import { RecruitmentPage } from './../pages/recruitment/recruitment';
@@ -22,7 +23,8 @@ import { FirstPage } from '../pages/first/first';
     RecruitmentPage,
     NotificationPage,
     CandidatePage,
-    FirstPage
+    FirstPage,
+    LoginPage
 
   ],
   imports: [
@@ -38,7 +40,8 @@ import { FirstPage } from '../pages/first/first';
     RecruitmentPage,
     NotificationPage,
     CandidatePage,
-    FirstPage
+    FirstPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
