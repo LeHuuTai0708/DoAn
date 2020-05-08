@@ -7,4 +7,15 @@ page-recruitment {
           margin-left: 10px;
           margin-right: 10px;
       }
+      ion-card-content.limitedText{
+        overflow: hidden; 
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        height: 60px;
+      }
+      custom-alert-danger.alert-ios .alert-message.alert-md .alert-message {
+        width: 90%;
+        height: 80%;
+     }
+
 }
