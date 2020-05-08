@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 import { HomePage } from '../home/home';
+import { RegistrationPage } from '../registration/registration';
 
 /**
  * Generated class for the FirstPage page.
@@ -24,9 +25,12 @@ export class FirstPage {
     console.log('ionViewDidLoad FirstPage');
   }
 
-  ChuyenPage()
+  Login()
   {
-    console.log('ionViewDidLoad FirstPage');
     this.navCtrl.setRoot(TabsPage);
+  }
+  Registration(){
+    this.navCtrl.push(RegistrationPage);
+
   }
 }
