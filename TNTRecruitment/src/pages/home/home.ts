@@ -1,3 +1,7 @@
+import { CandidatePage } from './../candidate/candidate';
+import { AccountPage } from './../account/account';
+import { NotificationPage } from './../notification/notification';
+import { RecruitmentPage } from './../recruitment/recruitment';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -20,6 +24,18 @@ export class HomePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
+  }
+  Recruitment() {
+    this.navCtrl.push(RecruitmentPage);
+  }
+  Notification() {
+    this.navCtrl.push(NotificationPage);
+  }
+  Account() {
+    this.navCtrl.push(AccountPage);
+  }
+  Candidate() {
+    this.navCtrl.push(CandidatePage);
   }
 
 }
