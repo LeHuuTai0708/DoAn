@@ -1,3 +1,7 @@
+import { CandidatePage } from './../pages/candidate/candidate';
+import { NotificationPage } from './../pages/notification/notification';
+import { RecruitmentPage } from './../pages/recruitment/recruitment';
+import { AccountPage } from './../pages/account/account';
 import { TabsPage } from './../pages/tabs/tabs';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -12,7 +16,12 @@ import { HomePage } from '../pages/home/home';
   declarations: [
     MyApp,
     HomePage,
-    TabsPage
+    TabsPage,
+    AccountPage,
+    RecruitmentPage,
+    NotificationPage,
+    CandidatePage
+
   ],
   imports: [
     BrowserModule,
@@ -22,7 +31,11 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage,
-    TabsPage
+    TabsPage,
+    AccountPage,
+    RecruitmentPage,
+    NotificationPage,
+    CandidatePage
   ],
   providers: [
     StatusBar,

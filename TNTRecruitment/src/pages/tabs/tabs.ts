@@ -1,3 +1,7 @@
+import { RecruitmentPage } from './../recruitment/recruitment';
+import { AccountPage } from './../account/account';
+import { NotificationPage } from './../notification/notification';
+import { CandidatePage } from './../candidate/candidate';
 import { HomePage } from './../home/home';
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
@@ -17,10 +21,10 @@ import { IonicPage, NavController } from 'ionic-angular';
 export class TabsPage {
 
   homeRoot = HomePage
-  recruitmentRoot = 'RecruitmentPage'
-  candidateRoot = 'CandidatePage'
-  notificationRoot = 'NotificationPage'
-  accountRoot = 'AccountPage'
+  recruitmentRoot = RecruitmentPage
+  candidateRoot = CandidatePage
+  notificationRoot = NotificationPage
+  accountRoot = AccountPage
 
 
   constructor(public navCtrl: NavController) {}
