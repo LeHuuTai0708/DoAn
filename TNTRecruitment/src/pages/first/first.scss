@@ -1,0 +1,51 @@
+page-first {
+ion-buttons.Login
+{
+    --color: #FF6633
+}
+
+ion-col.Lo-go {
+    width: 80%;
+    height: 200px;
+    max-height: 200px;
+    text-align: center;
+  }
+
+ion-col.Lo-gin {
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    padding-top: 200px;
+    text-align: center;
+  }
+
+  ion-col.D-K {
+    width: 100%;
+    height: 200px;
+    max-height: 40px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  ion-col.D-N {
+    width: 100%;
+    height: 200px;
+    max-height: 50px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  ion-img.logo{
+    width: 91%;
+    height: 375px;
+    padding:0;
+    text-align: center;
+  }
+  ion-buttons.button{
+      width: 100%;
+  }
+
+  button.custombutton{
+    width: 100%;
+  }
+}

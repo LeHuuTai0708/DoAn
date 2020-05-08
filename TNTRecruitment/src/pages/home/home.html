@@ -11,11 +11,11 @@
 </ion-header>
 
 <ion-content padding>
-  
+  <ion-img class = "background" src="assets/imgs/bg_tuyendung.PNG"></ion-img>
   <ion-grid>
     <ion-row>
       <ion-col class='my-thin-col'>
-        <ion-card>
+        <ion-card (click)="Recruitment($event)">
           <ion-card-header>
             <ion-icon name="person"></ion-icon>
             <ion-card-title style="font-size:18px">TUYỂN DỤNG</ion-card-title>
@@ -26,7 +26,7 @@
         </ion-card>
       </ion-col>
       <ion-col class='my-thin-col'>
-        <ion-card>
+        <ion-card (click)="Candidate($event)">
           <ion-card-header>
             <ion-icon name="person"></ion-icon>
             <ion-card-title style="font-size:18px">ỨNG VIÊN</ion-card-title>
@@ -39,9 +39,9 @@
     </ion-row>
     <ion-row>
       <ion-col class='my-thin-col'>
-        <ion-card>
+        <ion-card (click)="Notification($event)">
           <ion-card-header>
-            <div class ='my-round'>
+            <div>
               <ion-icon name="person"></ion-icon>
             </div>
             <ion-card-title style="font-size:18px">THÔNG BÁO</ion-card-title>
@@ -52,7 +52,7 @@
         </ion-card>
       </ion-col>
       <ion-col class='my-thin-col'>
-        <ion-card>
+        <ion-card (click)="Account($event)">
           <ion-card-header>
             <ion-icon name="person"></ion-icon>
             <ion-card-title style="font-size:18px">THÔNG TIN</ion-card-title>
