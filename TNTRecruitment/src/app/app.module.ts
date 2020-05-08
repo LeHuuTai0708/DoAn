@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FirstPage } from '../pages/first/first';
+import { AddRecruitmentPage } from '../pages/add-recruitment/add-recruitment';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FirstPage } from '../pages/first/first';
     RecruitmentPage,
     NotificationPage,
     CandidatePage,
-    FirstPage
+    FirstPage,
+    AddRecruitmentPage
 
   ],
   imports: [
@@ -38,7 +40,8 @@ import { FirstPage } from '../pages/first/first';
     RecruitmentPage,
     NotificationPage,
     CandidatePage,
-    FirstPage
+    FirstPage,
+    AddRecruitmentPage
   ],
   providers: [
     StatusBar,

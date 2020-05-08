@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AddRecruitmentPage } from '../add-recruitment/add-recruitment';
 
 /**
  * Generated class for the RecruitmentPage page.
@@ -22,7 +23,8 @@ export class RecruitmentPage {
     console.log('ionViewDidLoad RecruitmentPage');
   }
   CreateRecruitment(){
-    
+    this.navCtrl.push(AddRecruitmentPage);
   }
+
 
 }
