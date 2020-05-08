@@ -21,5 +21,8 @@ export class RecruitmentPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RecruitmentPage');
   }
+  CreateRecruitment(){
+    
+  }
 
 }
