@@ -14,6 +14,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FirstPage } from '../pages/first/first';
 import { RegistrationPage } from '../pages/registration/registration';
+import { AddRecruitmentPage } from '../pages/add-recruitment/add-recruitment';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RegistrationPage } from '../pages/registration/registration';
     CandidatePage,
     FirstPage,
     LoginPage,
-    RegistrationPage
+    RegistrationPage,
+    AddRecruitmentPage
 
   ],
   imports: [
@@ -44,7 +46,8 @@ import { RegistrationPage } from '../pages/registration/registration';
     CandidatePage,
     FirstPage,
     LoginPage,
-    RegistrationPage
+    RegistrationPage,
+    AddRecruitmentPage
   ],
   providers: [
     StatusBar,

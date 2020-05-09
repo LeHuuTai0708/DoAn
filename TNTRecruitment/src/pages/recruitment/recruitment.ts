@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+import { AddRecruitmentPage } from '../add-recruitment/add-recruitment';
 
 /**
  * Generated class for the RecruitmentPage page.
@@ -22,10 +23,7 @@ export class RecruitmentPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RecruitmentPage');
   }
-  CreateRecruitment() {
-
-  }
-
+  
   presentAlert() {
     const alert = this.alertController.create({
       title: 'FPT Software',
@@ -46,5 +44,8 @@ export class RecruitmentPage {
       }}]
     });
     alert.present();
+  }
+  CreateRecruitment(){
+    this.navCtrl.push(AddRecruitmentPage);
   }
 }
