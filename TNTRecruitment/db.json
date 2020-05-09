@@ -1,0 +1,56 @@
+{
+  "users": [
+      {
+          "id": "EMP-001",
+          "email": "chathurangi@innovera.com",
+          "pass": "12345678"
+      },
+      {
+          "id": "EMP-002",
+          "email": "chamani@innovera.com",
+          "pass": "12345678"
+      },
+      {
+          "id": "EMP-003",
+          "email": "awanthi@innovera.com",
+          "pass": "12345678"
+      },
+      {
+          "id": "EMP-004",
+          "email": "aya@innovera.com",
+          "pass": "12345678"
+      },
+      {
+          "id": "EMP-005",
+          "email": "darshana@innovera.com",
+          "pass": "12345678"
+      }
+  ],
+  "notification": [
+    {
+        "id": "EMP-001",
+        "email": "chathurangi@innovera.com",
+        "pass": "12345678"
+    },
+    {
+        "id": "EMP-002",
+        "email": "chamani@innovera.com",
+        "pass": "12345678"
+    },
+    {
+        "id": "EMP-003",
+        "email": "awanthi@innovera.com",
+        "pass": "12345678"
+    },
+    {
+        "id": "EMP-004",
+        "email": "aya@innovera.com",
+        "pass": "12345678"
+    },
+    {
+        "id": "EMP-005",
+        "email": "darshana@innovera.com",
+        "pass": "12345678"
+    }
+]
+}

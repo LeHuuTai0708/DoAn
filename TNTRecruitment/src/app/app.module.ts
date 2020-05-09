@@ -15,6 +15,9 @@ import { HomePage } from '../pages/home/home';
 import { FirstPage } from '../pages/first/first';
 import { RegistrationPage } from '../pages/registration/registration';
 import { AddRecruitmentPage } from '../pages/add-recruitment/add-recruitment';
+import { HttpClientModule } from '@angular/common/http';
+import { RestProvider } from '../providers/rest/rest';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,8 @@ import { AddRecruitmentPage } from '../pages/add-recruitment/add-recruitment';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    IonicStorageModule.forRoot(),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -52,7 +57,8 @@ import { AddRecruitmentPage } from '../pages/add-recruitment/add-recruitment';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RestProvider
   ]
 })
 export class AppModule {}
