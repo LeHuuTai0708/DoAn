@@ -6,10 +6,37 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>Recruitment</ion-title>
+    <ion-title >Recruitment</ion-title>
+    <ion-buttons  end>
+       <button ion-button color="secondary" (click)="CreateRecruitment()" class = "buttonCreate"> Thêm mới 
+      <ion-icon name="add" class = "Icon"></ion-icon>
+    </button></ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+<ion-list *ngFor = "let item of RecruitmentData" >
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/logo.png">
+      </ion-avatar>
+      <h2>FPT Software</h2>
+      <p>May 8, 2020</p>
+    </ion-item>
+    <ion-card-header>
+      <ion-card-title text-wrap>[HCM] 03 Senior Salesforce Developers</ion-card-title>
+    </ion-card-header>
+    <ion-card-content text-wrap class="limitedText"><p>Develop and customize for customer’s systems base on Salesforce (Force.com and Apex Code)
+      Opportunity to work on many business modules of Salesforce.
+      Join from system design stage with customer’s team.
+      Working in Ho Chi Minh city
+      Daily meeting with US customer from 7:00 AM ~ (VNT) or 10:00 PM ~ (VNT)</p></ion-card-content>
+    <ion-item>
+      <button (click) ="presentAlert()" ion-button icon-start clear item-end  color="secondary" style="font-size:16px">
+        Xem thêm
+      </button>
+    </ion-item>
+  </ion-card>
+</ion-list>
 </ion-content>

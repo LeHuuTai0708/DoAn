@@ -1,3 +1,4 @@
+import { LoginPage } from './../pages/login/login';
 import { CandidatePage } from './../pages/candidate/candidate';
 import { NotificationPage } from './../pages/notification/notification';
 import { RecruitmentPage } from './../pages/recruitment/recruitment';
@@ -12,6 +13,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FirstPage } from '../pages/first/first';
+import { RegistrationPage } from '../pages/registration/registration';
+import { AddRecruitmentPage } from '../pages/add-recruitment/add-recruitment';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { FirstPage } from '../pages/first/first';
     RecruitmentPage,
     NotificationPage,
     CandidatePage,
-    FirstPage
+    FirstPage,
+    LoginPage,
+    RegistrationPage,
+    AddRecruitmentPage
 
   ],
   imports: [
@@ -38,7 +44,10 @@ import { FirstPage } from '../pages/first/first';
     RecruitmentPage,
     NotificationPage,
     CandidatePage,
-    FirstPage
+    FirstPage,
+    LoginPage,
+    RegistrationPage,
+    AddRecruitmentPage
   ],
   providers: [
     StatusBar,
