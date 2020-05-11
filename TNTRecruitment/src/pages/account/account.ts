@@ -1,6 +1,8 @@
+import { FirstPage } from './../first/first';
 import { HomePage } from './../home/home';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
 
 /**
  * Generated class for the AccountPage page.
@@ -15,7 +17,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'account.html',
 })
 export class AccountPage {
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public storage : Storage,private app:App) {
   }
 
   ionViewDidLoad() {
@@ -23,5 +26,9 @@ export class AccountPage {
   }
   Ham() {
     this.navCtrl.push(HomePage);
+  }
+  Exit(){
+    this.storage.clear();
+    this.app.getRootNav().setRoot(FirstPage);
   }
 }
