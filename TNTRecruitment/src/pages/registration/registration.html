@@ -30,7 +30,7 @@
       </ion-item>
       <ion-item>
         <ion-label color="dark">Tỉnh</ion-label>
-        <ion-select #newSelect (change)="onChange(user.id)">
+        <ion-select >
           <ion-option *ngFor="let T of Tinh" [value]="T">{{T}}</ion-option>
         </ion-select>
       </ion-item>
@@ -46,12 +46,12 @@
       </ion-item>
       <ion-item>
         <ion-label color="dark">Quy mô công ty</ion-label>
-        <ion-select>
+        <ion-select >
           <ion-option *ngFor="let QM of QuyMo" [value]="QM">{{QM}}</ion-option>
         </ion-select>
       </ion-item>
       <ion-item>
-        <ion-input placeholder="Người liên hệ">
+        <ion-input placeholder="Người liên hệ" formControlName="contact">
         </ion-input>
       </ion-item>
       <ion-item>

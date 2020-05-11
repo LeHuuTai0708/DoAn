@@ -6,7 +6,7 @@ export class UsersAccount {
 export class UserInformation{
   id : string;
   company : string;
-  addresss: string;
+  address: string;
   companySize: string;
   contact : string;
 }
