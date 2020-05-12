@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ProfileScreenPage } from '../profile-screen/profile-screen';
 
 /**
- * Generated class for the CandidatePage page.
+ * Generated class for the ProfileScreenPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,16 @@ import { ProfileScreenPage } from '../profile-screen/profile-screen';
 
 @IonicPage()
 @Component({
-  selector: 'page-candidate',
-  templateUrl: 'candidate.html',
+  selector: 'page-profile-screen',
+  templateUrl: 'profile-screen.html',
 })
-export class CandidatePage {
+export class ProfileScreenPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CandidatePage');
+    console.log('ionViewDidLoad ProfileScreenPage');
   }
 
-  ProScreen(){
-    this.navCtrl.push(ProfileScreenPage);
-
-  }
 }
