@@ -14,12 +14,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'profile-screen.html',
 })
 export class ProfileScreenPage {
-
+  tabBarElement: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.tabBarElement = document.querySelector('.tabbar.show-tabbar');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ProfileScreenPage');
+  ionViewWillEnter() {
+    this.tabBarElement.style.display = 'none';
   }
+ 
+  ionViewWillLeave() {
+    this.tabBarElement.style.display = 'flex';
+  }
+  
+  takeMeBack() {
+    this.navCtrl.parent.select(0);
+  }
+  
 
 }
