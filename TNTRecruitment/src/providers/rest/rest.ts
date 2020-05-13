@@ -42,4 +42,14 @@ export class RestProvider {
       });
     });
   }
+  getUsersInfomation(id : String) {
+    return new Promise(resolve => {
+      this.http.get(this.apiUrl + "/usersInfo/" + id).subscribe(data => {
+        resolve(data);
+      },
+        err => {
+          console.log(err);
+        });
+    });
+  }
 }
