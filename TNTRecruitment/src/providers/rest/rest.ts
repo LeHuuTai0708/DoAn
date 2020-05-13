@@ -1,3 +1,4 @@
+import { UsersAccount, UserInformation } from './../../Models/Users';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -23,18 +24,18 @@ export class RestProvider {
         });
     });
   }
-  saveUserAccount(data) {
+  saveUserAccount(data : UsersAccount) {
     return new Promise((resolve, reject) => {
-      this.http.post(this.apiUrl + '/users', JSON.stringify(data)).subscribe(res => {
+      this.http.post(this.apiUrl + '/users', data).subscribe(res => {
         resolve(res);
       }, (err) => {
         reject(err);
       });
     });
   }
-  saveUserInfomation(data) {
+  saveUserInfomation(data : UserInformation) {
     return new Promise((resolve, reject) => {
-      this.http.post(this.apiUrl + '/usersInfo', JSON.stringify(data)).subscribe(res => {
+      this.http.post(this.apiUrl + '/usersInfo', data).subscribe(res => {
         resolve(res);
       }, (err) => {
         reject(err);
