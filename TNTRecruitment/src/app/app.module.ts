@@ -16,6 +16,7 @@ import { FirstPage } from '../pages/first/first';
 import { RegistrationPage } from '../pages/registration/registration';
 import { AddRecruitmentPage } from '../pages/add-recruitment/add-recruitment';
 import { ProfileScreenPage } from '../pages/profile-screen/profile-screen';
+import { RecruitmentDetailPage } from '../pages/recruitment-detail/recruitment-detail';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProfileScreenPage } from '../pages/profile-screen/profile-screen';
     LoginPage,
     RegistrationPage,
     AddRecruitmentPage,
-    ProfileScreenPage
+    ProfileScreenPage,
+    RecruitmentDetailPage
 
   ],
   imports: [
@@ -50,7 +52,8 @@ import { ProfileScreenPage } from '../pages/profile-screen/profile-screen';
     LoginPage,
     RegistrationPage,
     AddRecruitmentPage,
-    ProfileScreenPage
+    ProfileScreenPage,
+    RecruitmentDetailPage
   ],
   providers: [
     StatusBar,
