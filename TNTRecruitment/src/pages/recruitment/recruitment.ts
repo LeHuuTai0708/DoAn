@@ -1,7 +1,10 @@
+import { RestProvider } from './../../providers/rest/rest';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { AddRecruitmentPage } from '../add-recruitment/add-recruitment';
+import { Recruitment } from '../../Models/Recruitment';
+import { Observable } from 'rxjs';
 
 /**
  * Generated class for the RecruitmentPage page.
@@ -16,36 +19,25 @@ import { AddRecruitmentPage } from '../add-recruitment/add-recruitment';
   templateUrl: 'recruitment.html',
 })
 export class RecruitmentPage {
-  RecruitmentData: string[] = ["1", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2"]
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertController: AlertController) {
+  RecruitmentData : Recruitment[];
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public alertController: AlertController, public restProvider: RestProvider) {
+      this.restProvider.getRecruitment().then((data) => {
+        this.RecruitmentData = JSON.parse(JSON.stringify(data));
+        console.log(this.RecruitmentData[0].title);
+      });
+  }
+  ngOnInit() {
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RecruitmentPage');
   }
-  
   presentAlert() {
-    const alert = this.alertController.create({
-      title: 'FPT Software',
-      cssClass: ' custom-alert-danger',
-      subTitle: '[HCM] 03 Senior Salesforce Developers',
-      message: 'Develop and customize for customer’s systems base on Salesforce (Force.com and Apex Code\)\
-      Opportunity to work on many business modules of Salesforce Join from system design stage with customer’s team. Working in Ho Chi Minh city Daily meeting with US customer from 7:00 AM ~ (VNT) or 10:00 PM ~ (VNT)',
-      buttons: [{ 
-        text: 'Apply',
-      role: 'cancel',
-      handler: () => {
-        console.log('Cancel clicked');
-      }},
-      { text: 'Back',
-      role: 'cancel',
-      handler: () => {
-        console.log('Cancel clicked');
-      }}]
-    });
-    alert.present();
+
   }
-  CreateRecruitment(){
+  CreateRecruitment() {
     this.navCtrl.push(AddRecruitmentPage);
   }
 }

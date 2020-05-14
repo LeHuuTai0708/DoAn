@@ -1,6 +1,7 @@
 import { UsersAccount, UserInformation } from './../../Models/Users';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import firebase from 'firebase';
 
 /*
   Generated class for the RestProvider provider.
@@ -24,7 +25,7 @@ export class RestProvider {
         });
     });
   }
-  saveUserAccount(data : UsersAccount) {
+  saveUserAccount(data: UsersAccount) {
     return new Promise((resolve, reject) => {
       this.http.post(this.apiUrl + '/users', data).subscribe(res => {
         resolve(res);
@@ -33,13 +34,38 @@ export class RestProvider {
       });
     });
   }
-  saveUserInfomation(data : UserInformation) {
+  saveUserInfomation(data: UserInformation) {
     return new Promise((resolve, reject) => {
       this.http.post(this.apiUrl + '/usersInfo', data).subscribe(res => {
         resolve(res);
       }, (err) => {
         reject(err);
       });
+    });
+  }
+  getRecruitmentData() {
+    return new Promise(resolve => {
+      this.http.get(this.apiUrl + "/recruitment").subscribe(data => {
+        resolve(data);
+      },
+        err => {
+          console.log(err);
+        });
+    });
+  }
+  getRecruitment() {
+    return new Promise(resolve => {
+      firebase.database().ref('/recruitment').once('value', (snapshot) => {
+        let Catdata = snapshot.val();
+        let temparr = [];
+        for (var key in Catdata) {
+          temparr.push(Catdata[key]);
+        }
+        resolve(temparr);
+      },
+        err => {
+          console.log(err);
+        });
     });
   }
 }
