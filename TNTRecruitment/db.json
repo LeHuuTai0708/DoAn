@@ -53,5 +53,28 @@
       "address": "1/ Hà Nội/ Đà Lạt",
       "companySize": "Lớn"
     }
+  ],
+  "recruitment": [
+    {
+      "image": "https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png",
+      "companyName": "FPT Software",
+      "date": "1 ngày trước",
+      "title": "[HCM] 05 Senior Java Developers ~ $2,000",
+      "detail": "FPT Software Hanoi is looking for 05 Senior Java Developers with at least 3 years’ experience. When you join with us, you will have many opportunities for yourself: Join a challenging project related a variety of domains Work in a big project with many senior/expert people Join training on job if you need more training in project Can be promoted to Team leader/Project Manager with excellent performance"
+    },
+    {
+      "image": "https://cdn.itviec.com/employers/nashtech/logo/w170/nBaSjKy2e68gEwoJxsLk5zCe/logo.jpg",
+      "companyName": "NashTech",
+      "date": "2 ngày trước",
+      "title": "Java Technical Architect",
+      "detail": "Can play Technical Leader or Technical Architect role in the projects To contribute to the system architecture design Contribute to the design specifications that are in compliance with established coding quality standard of the company. To consult or support the project teams and clients on technical perspectives To support for presales activities (R&D, estimate, pilot, etc), technical interviews To perform trainings/seminars for the company To develop the new skills for project teams if any new technologies required based on the project roadmap."
+    },
+    {
+      "image": "https://cdn.itviec.com/employers/lg-development-center-vietnam/logo/w170/kb3U11PfmJFtdPgCEMaUJMNn/lg-development-center-vietnam-logo.png",
+      "companyName": "LG Development Center Vietnam",
+      "date": "2 ngày trước",
+      "title": "Production Application Engineer",
+      "detail": "As member of Software Development team, you will be responsible for researching and developing applications for Car Infotainment, AVN (Audio Video Navigation) system, Cluster and Telematics as below: • Develop automotive products and technologies (production  Applications); • Responsible for software delivery to head quarter; • Generate reports, communicate with local managements and head quarter."
+    }
   ]
 }

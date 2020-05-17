@@ -26,7 +26,7 @@ export class AccountPage {
     public storage: Storage, private app: App, public restProvider: RestProvider) {
     this.storage.get("AccountID").then((data) => {
       this.id = data;
-      this.restProvider.getUsersInfomation(this.id).then((data) => {
+      this.restProvider.getUserInfomation(this.id).then((data) => {
         this.user = JSON.parse(JSON.stringify(data));
       });
     });
