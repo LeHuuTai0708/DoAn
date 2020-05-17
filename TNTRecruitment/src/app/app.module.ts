@@ -1,6 +1,5 @@
 import { LoginPage } from './../pages/login/login';
 import { CandidatePage } from './../pages/candidate/candidate';
-import { NotificationPage } from './../pages/notification/notification';
 import { RecruitmentPage } from './../pages/recruitment/recruitment';
 import { AccountPage } from './../pages/account/account';
 import { TabsPage } from './../pages/tabs/tabs';
@@ -18,6 +17,7 @@ import { AddRecruitmentPage } from '../pages/add-recruitment/add-recruitment';
 import { HttpClientModule } from '@angular/common/http';
 import { RestProvider } from '../providers/rest/rest';
 import { IonicStorageModule } from '@ionic/storage';
+import { NotificationPage } from '../pages/notification/notification';
 
 @NgModule({
   declarations: [

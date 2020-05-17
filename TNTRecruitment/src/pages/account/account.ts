@@ -19,7 +19,7 @@ import { Storage } from '@ionic/storage';
   templateUrl: 'account.html',
 })
 export class AccountPage {
-  public myUser: boolean = false;
+  public myUser: boolean = true;
   user: UserInformation;
   id: String;
   constructor(public navCtrl: NavController, public navParams: NavParams,
