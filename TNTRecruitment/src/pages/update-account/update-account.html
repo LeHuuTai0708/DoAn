@@ -97,23 +97,17 @@
         <div style="font-size:24px">Thông tin công ty:</div>
       </ion-row>
       <ion-row>
-        <ion-col class="my-thin-col-title">
           <ion-label class="textAlignTitle" style="font-size:18px" stacked>Tên</ion-label>
-          <ion-input placeholder></ion-input>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.name}}</div>
-        </ion-col>
+          <ion-input placeholder ngModel = {{company?.name}}></ion-input>
       </ion-row>
       <ion-row>
-        <ion-col class="my-thin-col-title">
           <ion-label class="textAlignTitle" style="font-size:18px" stacked>Trụ sở chính</ion-label>
-          <ion-input placeholder></ion-input>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.headquarters}}</div>
-        </ion-col>
+          <ion-input placeholder ngModel = {{company?.headquarters}}></ion-input>
       </ion-row>
+      <ion-row>
+        <ion-label class="textAlignTitle" style="font-size:18px" stacked>Trụ sở chính</ion-label>
+        <ion-input placeholder ngModel = {{company?.headquarters}}></ion-input>
+    </ion-row>
       <ion-row>
         <ion-col class="my-thin-col-title">
           <ion-label class="textAlignTitle" style="font-size:18px" stacked>Địa chỉ</ion-label>
