@@ -1,4 +1,5 @@
-import { UsersAccount } from './../../Models/Users';
+import { Recruitment } from './../../Models/Recruitment';
+import { UsersAccount, Company, Student } from './../../Models/Users';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -32,9 +33,27 @@ export class RestProvider {
       });
     });
   }
-  saveUserInfomation(data: UsersAccount) {
+  saveStudentInfomation(data: Student) {
     return new Promise((resolve, reject) => {
-      this.http.post(this.apiUrl + '/usersInfo', data).subscribe(res => {
+      this.http.post(this.apiUrl + '/student', data).subscribe(res => {
+        resolve(res);
+      }, (err) => {
+        reject(err);
+      });
+    });
+  }
+  saveCompanyInfomation(data: Company) {
+    return new Promise((resolve, reject) => {
+      this.http.post(this.apiUrl + '/company', data).subscribe(res => {
+        resolve(res);
+      }, (err) => {
+        reject(err);
+      });
+    });
+  }
+  saveRecruitmentInfomation(data: Recruitment) {
+    return new Promise((resolve, reject) => {
+      this.http.post(this.apiUrl + '/recruitment', data).subscribe(res => {
         resolve(res);
       }, (err) => {
         reject(err);
