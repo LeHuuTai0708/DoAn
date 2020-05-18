@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { AddRecruitmentPage } from '../add-recruitment/add-recruitment';
+import { RecruitmentDetailPage } from '../recruitment-detail/recruitment-detail';
 
 /**
  * Generated class for the RecruitmentPage page.
@@ -31,9 +32,13 @@ export class RecruitmentPage {
   }
 
   presentAlert() {
-
+    this.navCtrl.push(RecruitmentDetailPage);
   }
   CreateRecruitment() {
     this.navCtrl.push(AddRecruitmentPage);
+  }
+
+  RecruitmentDetail(){
+    this.navCtrl.push(RecruitmentDetailPage);
   }
 }
