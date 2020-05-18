@@ -18,76 +18,44 @@
         <div style="font-size:24px">Thông tin cá nhân:</div>
       </ion-row>
       <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Tên:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.name}}</div>
-        </ion-col>
-      </ion-row>
+        <ion-label class="textAlignTitle" style="font-size:17px" stacked>Tên</ion-label>
+        <ion-input style="font-size:17px" placeholder ngModel = {{student?.name}}></ion-input>
+    </ion-row>
       <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Giới Tính:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.sex}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Ngày Sinh:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.dateofbirth}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Email:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.email}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Điện thoại:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.phone}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Địa chỉ:</div>
-          <ion-input placeholder></ion-input>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.address}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Trường:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.school}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Chuyên ngành:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.specialize}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-buttons class="button">
-          <button class='custombutton' ion-button round outline color="secondary" (click)="Exit($event)">
-            Thoát
-          </button></ion-buttons>
-      </ion-row>
+        <ion-label class="textAlignTitle" style="font-size:18px" stacked>Giới tính</ion-label>
+        <ion-input style="font-size:17px" placeholder ngModel = {{student?.sex}}></ion-input>
+    </ion-row>
+    <ion-row>
+      <ion-label class="textAlignTitle" style="font-size:18px" stacked>Ngày sinh</ion-label>
+      <ion-input style="font-size:17px"placeholder ngModel = {{student?.dateofbirth}}></ion-input>
+  </ion-row>
+  <ion-row>
+    <ion-label class="textAlignTitle" style="font-size:18px" stacked>Email</ion-label>
+    <ion-input style="font-size:17px" placeholder ngModel = {{student?.email}}></ion-input>
+</ion-row>
+<ion-row>
+  <ion-label class="textAlignTitle" style="font-size:18px" stacked>Điện thoại</ion-label>
+  <ion-input style="font-size:17px" placeholder ngModel = {{student?.phone}}></ion-input>
+</ion-row>
+<ion-row>
+  <ion-label class="textAlignTitle" style="font-size:18px" stacked>Địa chỉ</ion-label>
+  <ion-input style="font-size:17px" placeholder ngModel = {{student?.address}}></ion-input>
+</ion-row>
+<ion-row>
+  <ion-label class="textAlignTitle" style="font-size:18px" stacked>Trường</ion-label>
+  <ion-input style="font-size:17px" placeholder ngModel = {{student?.school}}></ion-input>
+</ion-row>
+<ion-row>
+  <ion-label class="textAlignTitle" style="font-size:18px" stacked>Chuyên môn</ion-label>
+  <ion-input style="font-size:17px" placeholder ngModel = {{student?.specialize}}></ion-input>
+</ion-row>
+      
+<ion-row>
+  <ion-buttons class="custombuttons1">
+    <button class='custom1'ion-button  round outline color="secondary"(click)="Exit($event)">
+    Thoát
+    </button></ion-buttons> 
+</ion-row>
     </ion-grid>
   </div>
   <ng-template #tag>
@@ -98,70 +66,36 @@
       </ion-row>
       <ion-row>
           <ion-label class="textAlignTitle" style="font-size:18px" stacked>Tên</ion-label>
-          <ion-input placeholder ngModel = {{company?.name}}></ion-input>
-      </ion-row>
-      <ion-row>
-          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Trụ sở chính</ion-label>
-          <ion-input placeholder ngModel = {{company?.headquarters}}></ion-input>
+          <ion-input style="font-size:17px" placeholder ngModel = {{company?.name}}></ion-input>
       </ion-row>
       <ion-row>
         <ion-label class="textAlignTitle" style="font-size:18px" stacked>Trụ sở chính</ion-label>
-        <ion-input placeholder ngModel = {{company?.headquarters}}></ion-input>
+        <ion-input style="font-size:17px" placeholder ngModel = {{company?.headquarters}}></ion-input>
     </ion-row>
       <ion-row>
-        <ion-col class="my-thin-col-title">
-          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Địa chỉ</ion-label>
-          <ion-input placeholder></ion-input>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.address}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Email</ion-label>
-          <ion-input placeholder></ion-input>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.email}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Số điện thoại</ion-label>
-          <ion-input placeholder></ion-input>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.phone}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Website</ion-label>
-          <ion-input placeholder></ion-input>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.website}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Làm việc</ion-label>
-          <ion-input placeholder></ion-input>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.worktime}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Chuyên môn</ion-label>
-          <ion-input placeholder></ion-input>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.specialize}}</div>
-        </ion-col>
-      </ion-row>
+        <ion-label class="textAlignTitle" style="font-size:18px" stacked>Địa chỉ</ion-label>
+        <ion-input style="font-size:17px" placeholder ngModel = {{company?.address}}></ion-input>
+    </ion-row>
+    <ion-row>
+      <ion-label class="textAlignTitle" style="font-size:18px" stacked>Email</ion-label>
+      <ion-input style="font-size:17px" placeholder ngModel = {{company?.email}}></ion-input>
+  </ion-row>
+  <ion-row>
+    <ion-label class="textAlignTitle" style="font-size:18px" stacked>Số điện thoại</ion-label>
+    <ion-input style="font-size:17px" placeholder ngModel = {{company?.phone}}></ion-input>
+</ion-row>
+<ion-row>
+  <ion-label class="textAlignTitle" style="font-size:18px" stacked>Website</ion-label>
+  <ion-input style="font-size:17px" placeholder ngModel = {{company?.website}}></ion-input>
+</ion-row>
+<ion-row>
+  <ion-label class="textAlignTitle" style="font-size:18px" stacked>Làm việc</ion-label>
+  <ion-input style="font-size:17px" placeholder ngModel = {{company?.worktime}}></ion-input> 
+</ion-row>
+<ion-row>
+  <ion-label class="textAlignTitle" style="font-size:18px" stacked>Chuyên môn</ion-label>
+  <ion-input style="font-size:17px" placeholder ngModel = {{company?.specialize}}></ion-input> 
+</ion-row>
       <ion-row>
         <ion-buttons class="custombuttons1">
           <button class='custom1'ion-button  round outline color="secondary"(click)="Login($event)">
