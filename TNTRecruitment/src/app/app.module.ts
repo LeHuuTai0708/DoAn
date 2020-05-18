@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RestProvider } from '../providers/rest/rest';
 import { IonicStorageModule } from '@ionic/storage';
 import { NotificationPage } from '../pages/notification/notification';
+import { UpdateAccountPage } from '../pages/update-account/update-account';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NotificationPage } from '../pages/notification/notification';
     FirstPage,
     LoginPage,
     RegistrationPage,
-    AddRecruitmentPage
+    AddRecruitmentPage,
+    UpdateAccountPage
 
   ],
   imports: [
@@ -52,7 +54,9 @@ import { NotificationPage } from '../pages/notification/notification';
     FirstPage,
     LoginPage,
     RegistrationPage,
-    AddRecruitmentPage
+    AddRecruitmentPage,
+    UpdateAccountPage
+
   ],
   providers: [
     StatusBar,

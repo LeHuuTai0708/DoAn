@@ -1,10 +1,14 @@
 <!--
-  Generated template for the AccountPage page.
+  Generated template for the UpdateAccountPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-
+<ion-header>
+  <ion-navbar>
+    <ion-title>UpdateAccountPage</ion-title>
+  </ion-navbar>
+</ion-header>
 
 <ion-content padding>
   <div *ngIf="settingUserInfo; else tag">
@@ -56,6 +60,7 @@
       <ion-row>
         <ion-col class="my-thin-col-title">
           <div style="font-size:18px" class="textAlignTitle">Địa chỉ:</div>
+          <ion-input placeholder></ion-input>
         </ion-col>
         <ion-col class="my-thin-col">
           <div style="font-size:18px" class="textAlign">{{student?.address}}</div>
@@ -93,7 +98,8 @@
       </ion-row>
       <ion-row>
         <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Tên:</div>
+          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Tên</ion-label>
+          <ion-input placeholder></ion-input>
         </ion-col>
         <ion-col class="my-thin-col">
           <div style="font-size:18px" class="textAlign">{{company?.name}}</div>
@@ -101,7 +107,8 @@
       </ion-row>
       <ion-row>
         <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Trụ sở chính:</div>
+          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Trụ sở chính</ion-label>
+          <ion-input placeholder></ion-input>
         </ion-col>
         <ion-col class="my-thin-col">
           <div style="font-size:18px" class="textAlign">{{company?.headquarters}}</div>
@@ -109,7 +116,8 @@
       </ion-row>
       <ion-row>
         <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Địa chỉ:</div>
+          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Địa chỉ</ion-label>
+          <ion-input placeholder></ion-input>
         </ion-col>
         <ion-col class="my-thin-col">
           <div style="font-size:18px" class="textAlign">{{company?.address}}</div>
@@ -117,7 +125,8 @@
       </ion-row>
       <ion-row>
         <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Email:</div>
+          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Email</ion-label>
+          <ion-input placeholder></ion-input>
         </ion-col>
         <ion-col class="my-thin-col">
           <div style="font-size:18px" class="textAlign">{{company?.email}}</div>
@@ -125,7 +134,8 @@
       </ion-row>
       <ion-row>
         <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Số điện thoại:</div>
+          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Số điện thoại</ion-label>
+          <ion-input placeholder></ion-input>
         </ion-col>
         <ion-col class="my-thin-col">
           <div style="font-size:18px" class="textAlign">{{company?.phone}}</div>
@@ -133,7 +143,8 @@
       </ion-row>
       <ion-row>
         <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Website:</div>
+          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Website</ion-label>
+          <ion-input placeholder></ion-input>
         </ion-col>
         <ion-col class="my-thin-col">
           <div style="font-size:18px" class="textAlign">{{company?.website}}</div>
@@ -141,7 +152,8 @@
       </ion-row>
       <ion-row>
         <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Làm việc:</div>
+          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Làm việc</ion-label>
+          <ion-input placeholder></ion-input>
         </ion-col>
         <ion-col class="my-thin-col">
           <div style="font-size:18px" class="textAlign">{{company?.worktime}}</div>
@@ -149,24 +161,19 @@
       </ion-row>
       <ion-row>
         <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Chuyên môn:</div>
+          <ion-label class="textAlignTitle" style="font-size:18px" stacked>Chuyên môn</ion-label>
+          <ion-input placeholder></ion-input>
         </ion-col>
         <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">J{{company?.specialize}}</div>
+          <div style="font-size:18px" class="textAlign">{{company?.specialize}}</div>
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-buttons class="account-button">
-          <button class='custombutton' ion-button round outline color="secondary" (click)="UpdateAccount($event)">
-            Cập nhập
-          </button>
-        </ion-buttons>
-        <ion-buttons class="account-button">
-          <button class='custombutton' ion-button round outline color="secondary" (click)="Exit($event)">
-            Thoát
-          </button>
-        </ion-buttons>
-      </ion-row>
+        <ion-buttons class="custombuttons1">
+          <button class='custom1'ion-button  round outline color="secondary"(click)="Login($event)">
+          Cập nhật
+          </button></ion-buttons> 
+    </ion-row>
     </ion-grid>
   </ng-template>
 </ion-content>
