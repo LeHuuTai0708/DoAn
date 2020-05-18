@@ -5,6 +5,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { AddRecruitmentPage } from '../add-recruitment/add-recruitment';
 import { RecruitmentDetailPage } from '../recruitment-detail/recruitment-detail';
+import { CompanyDetailPage } from '../company-detail/company-detail';
 
 /**
  * Generated class for the RecruitmentPage page.
@@ -40,5 +41,10 @@ export class RecruitmentPage {
 
   RecruitmentDetail(){
     this.navCtrl.push(RecruitmentDetailPage);
+  }
+
+  DetailCompany()
+  {
+    this.navCtrl.push(CompanyDetailPage);
   }
 }

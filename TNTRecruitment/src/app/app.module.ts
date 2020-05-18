@@ -20,6 +20,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { NotificationPage } from '../pages/notification/notification';
 import { ProfileScreenPage } from '../pages/profile-screen/profile-screen';
 import { RecruitmentDetailPage } from '../pages/recruitment-detail/recruitment-detail';
+import { CompanyDetailPage } from '../pages/company-detail/company-detail';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { RecruitmentDetailPage } from '../pages/recruitment-detail/recruitment-d
     RegistrationPage,
     AddRecruitmentPage,
     ProfileScreenPage,
-    RecruitmentDetailPage
+    RecruitmentDetailPage,
+    CompanyDetailPage
 
   ],
   imports: [
@@ -58,7 +60,8 @@ import { RecruitmentDetailPage } from '../pages/recruitment-detail/recruitment-d
     RegistrationPage,
     AddRecruitmentPage,
     ProfileScreenPage,
-    RecruitmentDetailPage
+    RecruitmentDetailPage,
+    CompanyDetailPage
   ],
   providers: [
     StatusBar,

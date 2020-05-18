@@ -17,7 +17,7 @@
 <ion-content padding>
   <ion-list *ngFor='let item of RecruitmentData'>
     <ion-card>
-      <ion-item>
+      <ion-item (click)="DetailCompany()">
         <ion-avatar item-start>
           <img src={{item.image}}>
         </ion-avatar>
