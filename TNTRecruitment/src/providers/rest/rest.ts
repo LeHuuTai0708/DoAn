@@ -1,4 +1,4 @@
-import { UsersAccount, UserInformation } from './../../Models/Users';
+import { UsersAccount } from './../../Models/Users';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -32,7 +32,7 @@ export class RestProvider {
       });
     });
   }
-  saveUserInfomation(data: UserInformation) {
+  saveUserInfomation(data: UsersAccount) {
     return new Promise((resolve, reject) => {
       this.http.post(this.apiUrl + '/usersInfo', data).subscribe(res => {
         resolve(res);
@@ -43,7 +43,27 @@ export class RestProvider {
   }
   getUserInfomation(id : String){
     return new Promise(resolve => {
-      this.http.get(this.apiUrl + "/usersInfo/" + id).subscribe(data => {
+      this.http.get(this.apiUrl + "/users/" + id).subscribe(data => {
+        resolve(data);
+      },
+        err => {
+          console.log(err);
+        });
+    });
+  }
+  getStudentInfomation(id : String){
+    return new Promise(resolve => {
+      this.http.get(this.apiUrl + "/student/" + id).subscribe(data => {
+        resolve(data);
+      },
+        err => {
+          console.log(err);
+        });
+    });
+  }
+  getCompanyInfomation(id : String){
+    return new Promise(resolve => {
+      this.http.get(this.apiUrl + "/company/" + id).subscribe(data => {
         resolve(data);
       },
         err => {
