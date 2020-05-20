@@ -16,17 +16,17 @@
     <ion-row class ='border'>
     <form [formGroup]="formRegistration">
       <ion-item >
-        <ion-label icon-end>
-          Tài khoản: 
-          <ion-icon name="person"></ion-icon>
+        <ion-icon name="person"></ion-icon>   
+        <ion-label icon-start>          
+          Tài khoản:       
         </ion-label>
         <ion-input placeholder formControlName="account" >
         </ion-input>
       </ion-item>
-      <ion-item>
-        <ion-label  icon-end>
+      <ion-item >
+        <ion-label>
           Mật khẩu: 
-          <ion-icon name="key"></ion-icon>
+          <ion-icon  name="key"></ion-icon>
         </ion-label>
         <ion-input placeholder formControlName="password">
         </ion-input>
@@ -99,7 +99,7 @@
       </ion-row>
       <ion-item>
         <ion-buttons>
-          <button class='custombutton' ion-button round outline color="secondary" (click)="Login($event)" >           
+          <button class='custombutton5' ion-button round outline color="secondary" (click)="Login($event)" >           
             Đăng ký
           </button></ion-buttons>
       </ion-item>
