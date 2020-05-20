@@ -42,9 +42,27 @@ export class RestProvider {
       });
     });
   }
+  updateStudentInfomation(data: Student) {
+    return new Promise((resolve, reject) => {
+      this.http.put(this.apiUrl + '/student/'+data.id, data).subscribe(res => {
+        resolve(res);
+      }, (err) => {
+        reject(err);
+      });
+    });
+  }
   saveCompanyInfomation(data: Company) {
     return new Promise((resolve, reject) => {
       this.http.post(this.apiUrl + '/company', data).subscribe(res => {
+        resolve(res);
+      }, (err) => {
+        reject(err);
+      });
+    });
+  }
+  updateCompanyInfomation(data: Company) {
+    return new Promise((resolve, reject) => {
+      this.http.put(this.apiUrl + '/company/'+data.id, data).subscribe(res => {
         resolve(res);
       }, (err) => {
         reject(err);

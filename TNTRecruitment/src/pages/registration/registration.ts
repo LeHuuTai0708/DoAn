@@ -35,11 +35,16 @@ export class RegistrationPage {
      public restProvider: RestProvider,public formBuilder :FormBuilder,public alertCtrl : AlertController) {
       this.user = new UsersAccount();
     this.formRegistration = formBuilder.group({
-      email: ['', Validators.required],
+      account: ['', Validators.required],
       password: ['', Validators.required],
-      company: ['', Validators.required],
-      contact: ['', Validators.required],
-      address: ['', Validators.required]
+      name: ['', Validators.required],
+      sex: ['', Validators.required],
+      dateofbirth: ['', Validators.required],
+      email: ['', Validators.required],
+      phone: ['', Validators.required],
+      address: ['', Validators.required],
+      school: ['', Validators.required],
+      specialize: ['', Validators.required]
     });
   }
   ionViewDidLoad() {
@@ -56,18 +61,6 @@ export class RegistrationPage {
   //     }else{
   //       this.showError();
   //     }
-  // }
-  // settingAccount(){
-  //   let loginInfo = this.formRegistration.value;
-  //   this.userInfo = new UserInformation();
-  //   this.user.id = Md5.hashStr(loginInfo["email"]).toString();
-  //   this.userInfo.id = this.user.id;
-  //   this.user.email = loginInfo["email"];
-  //   this.user.pass = loginInfo["password"];
-  //   this.userInfo.company = loginInfo["company"];
-  //   this.userInfo.contact = loginInfo["contact"];
-  //   this.userInfo.address = loginInfo["address"]+"/ " +this.selectTinh+"/ " +this.selectTP;
-  //   this.userInfo.companySize = this.selectCompanySize;
   // }
   // saveUser(User : UsersAccount) {
   //   this.restProvider.saveUserAccount(User).then((result) => {
