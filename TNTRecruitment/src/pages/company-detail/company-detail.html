@@ -1,0 +1,40 @@
+<!--
+  Generated template for the CompanyDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Detail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-img class='pic' item-start src={{company?.image}}></ion-img>
+      <h2> {{company?.name}} </h2>
+      <p> {{company?.address}}</p>
+      <p>{{company?.worktime}}</p>
+      <p>{{company?.headquarters}}</p>
+    </ion-item>
+    <ion-item>
+      <ion-label color="secondary">ABOUT {{company?.name}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-card-content text-wrap>
+        <p>- Can play Techical Leader of Technical Architect role in the projects</p>
+        <p>- To contribute to the system architeture degisn</p>
+        <p>- Contribute to the design specifications that are in compliance with established coding quality standard of
+          the company.</p>
+        <p>- To con sult or support the project teams and cilents on technical perspectives</p>
+        <p>- To support for presales activities ( R&D, estimate, pilot, etc) technical interviews</p>
+        <p>- To perform trainings/serminars for the company- To develop the new skills for project teams if any new
+          technologies required based on the project roadmap.
+        </p>
+      </ion-card-content>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

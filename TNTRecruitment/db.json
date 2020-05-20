@@ -3,59 +3,103 @@
     {
       "id": "3dc19c9fc62feda7e0d9d97890afd05b",
       "email": "Demon@gmail.com",
-      "pass": "12345678"
+      "pass": "12345678",
+      "type": "student"
     },
     {
       "id": "c4ca4238a0b923820dcc509a6f75849b",
       "email": "1",
-      "pass": "1"
+      "pass": "1",
+      "type": "company"
+    },
+    {
+      "id": "c4ca4238a0b555820dcc509a6f75849b",
+      "email": "2",
+      "pass": "2",
+      "type": "student"
     }
   ],
   "notification": [
-    {
-      "id": "EMP-001",
-      "email": "chathurangi@innovera.com",
-      "pass": "12345678"
-    },
-    {
-      "id": "EMP-002",
-      "email": "chamani@innovera.com",
-      "pass": "12345678"
-    },
-    {
-      "id": "EMP-003",
-      "email": "awanthi@innovera.com",
-      "pass": "12345678"
-    },
-    {
-      "id": "EMP-004",
-      "email": "aya@innovera.com",
-      "pass": "12345678"
-    },
-    {
-      "id": "EMP-005",
-      "email": "darshana@innovera.com",
-      "pass": "12345678"
-    }
   ],
-  "usersInfo": [
+  "student": [
     {
       "id": "3dc19c9fc62feda7e0d9d97890afd05b",
-      "company": "Demon",
-      "contact": "Tai",
+      "name": "Le Huu Tai",
+      "sex": "Nam",
+      "dateofbirth": "27/08/1998",
+      "email": "lehuutai@gmail.com",
+      "phone": "0792212921",
       "address": "47/3/ Lâm Đồng/ Đà Lạt",
-      "companySize": "Lớn"
+      "school": "Đại học Đà Lạt",
+      "specialize": "Java, C#, C++",
+      "image": "https://i.ytimg.com/vi/mznVe0XntiU/maxresdefault.jpg"
+    },
+    {
+      "id": "c4ca4238a0b555820dcc509a6f75849b",
+      "name": "Le Huu Tai",
+      "sex": "Nam",
+      "dateofbirth": "27/08/1998",
+      "email": "lehuutai@gmail.com",
+      "phone": "0792212921",
+      "address": "47/3/ Lâm Đồng/ Đà Lạt",
+      "school": "Đại học Đà Lạt",
+      "specialize": "Java, C#, C++",
+      "image": "https://i.ytimg.com/vi/mznVe0XntiU/maxresdefault.jpg"
     },
     {
       "id": "c4ca4238a0b923820dcc509a6f75849b",
-      "company": "1",
-      "contact": "1",
-      "address": "1/ Hà Nội/ Đà Lạt",
-      "companySize": "Lớn"
+      "name": "Le Huu Tai",
+      "sex": "Nam",
+      "dateofbirth": "27/08/1998",
+      "email": "lehuutai@gmail.com",
+      "phone": "0792212921",
+      "address": "47/3/ Lâm Đồng/ Đà Lạt",
+      "school": "Đại học Đà Lạt",
+      "specialize": "Java, C#, C++",
+      "image": "https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png"
+    }
+  ],
+  "company": [
+    {
+      "id": "c4ca4238a0b923820dcc509a6f75849b",
+      "name": "FPT Software",
+      "headquarters": "Việt Nam",
+      "address": "Hồ Chí Minh",
+      "email": "fpt@gmail.com",
+      "phone": "03030303030",
+      "website": "fpt.com",
+      "worktime": "T2 - T6",
+      "specialize": "Java, C#, C++",
+      "image": "https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png"
+    },
+    {
+      "id": "2",
+      "name": "NashTech",
+      "headquarters": "Việt Nam",
+      "address": "Hồ Chí Minh",
+      "email": "nash@gmail.com",
+      "phone": "03030303030",
+      "website": "nash.com",
+      "worktime": "T2 - T6",
+      "specialize": "Java, C#, C++",
+      "image": "https://cdn.itviec.com/employers/nashtech/logo/w170/nBaSjKy2e68gEwoJxsLk5zCe/logo.jpg"
+    },
+    {
+      "id": "3",
+      "name": "LG Development Center Vietnam",
+      "headquarters": "Việt Nam",
+      "address": "Hồ Chí Minh",
+      "email": "lg@gmail.com",
+      "phone": "03030303030",
+      "website": "lg.com",
+      "worktime": "T2 - T6",
+      "specialize": "Java, C#, C++",
+      "image": "https://cdn.itviec.com/employers/lg-development-center-vietnam/logo/w170/kb3U11PfmJFtdPgCEMaUJMNn/lg-development-center-vietnam-logo.png"
     }
   ],
   "recruitment": [
     {
+      "id": "c4ca4238a0b923820dcc509a6f75849b",
       "image": "https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png",
       "companyName": "FPT Software",
       "date": "1 ngày trước",
@@ -63,6 +107,7 @@
       "detail": "FPT Software Hanoi is looking for 05 Senior Java Developers with at least 3 years’ experience. When you join with us, you will have many opportunities for yourself: Join a challenging project related a variety of domains Work in a big project with many senior/expert people Join training on job if you need more training in project Can be promoted to Team leader/Project Manager with excellent performance"
     },
     {
+      "id": "2",
       "image": "https://cdn.itviec.com/employers/nashtech/logo/w170/nBaSjKy2e68gEwoJxsLk5zCe/logo.jpg",
       "companyName": "NashTech",
       "date": "2 ngày trước",
@@ -70,6 +115,7 @@
       "detail": "Can play Technical Leader or Technical Architect role in the projects To contribute to the system architecture design Contribute to the design specifications that are in compliance with established coding quality standard of the company. To consult or support the project teams and clients on technical perspectives To support for presales activities (R&D, estimate, pilot, etc), technical interviews To perform trainings/seminars for the company To develop the new skills for project teams if any new technologies required based on the project roadmap."
     },
     {
+      "id": "3",
       "image": "https://cdn.itviec.com/employers/lg-development-center-vietnam/logo/w170/kb3U11PfmJFtdPgCEMaUJMNn/lg-development-center-vietnam-logo.png",
       "companyName": "LG Development Center Vietnam",
       "date": "2 ngày trước",

@@ -3,6 +3,10 @@ page-account {
         width: 100%;
         height: 250px;
         padding: 0px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
     }
     div.textAlign{
     text-align: left;
@@ -31,5 +35,8 @@ page-account {
         text-align: left;
         padding-bottom: 0px;
       
+      }
+      ion-buttons.account-button{
+        width: 45%;
       }
 }

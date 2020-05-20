@@ -15,13 +15,27 @@ import { TabsPage } from '../tabs/tabs';
   templateUrl: 'add-recruitment.html',
 })
 export class AddRecruitmentPage {
+  tabBarElement: any;
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.tabBarElement = document.querySelector('.tabbar.show-tabbar');
+  }
+
+  ionViewWillEnter() {
+    this.tabBarElement.style.display = 'none';
+  }
+ 
+  ionViewWillLeave() {
+    this.tabBarElement.style.display = 'flex';
+  }
+  
+  takeMeBack() {
+    this.navCtrl.parent.select(0);
+  }
   GioiTinh : string[] = ["Nam", "Nữ", "Khác"]
   KinhNghiem : string[] = ["1 năm", "2 năm", "3 năm", "4 năm","5 năm"]
   TrinhDo : string[] = ["Đại học", "Sinh viên", "Đi làm"]
   MucLuong : string[] = ["5 - 1- triệu", "1 - 15 triệu", "15 - 20 triệu", "Khác"]
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddRecruitmentPage');
@@ -31,4 +45,6 @@ export class AddRecruitmentPage {
   {
     this.navCtrl.push(TabsPage);
   }
+
+  
 }
