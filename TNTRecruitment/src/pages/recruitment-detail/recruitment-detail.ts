@@ -1,5 +1,8 @@
+import { UsersAccount } from './../../Models/Users';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
+import { RestProvider } from '../../providers/rest/rest';
+import { Storage } from '@ionic/storage';
 
 /**
  * Generated class for the RecruitmentDetailPage page.
@@ -15,18 +18,30 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RecruitmentDetailPage {
   tabBarElement: any;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.tabBarElement = document.querySelector('.tabbar.show-tabbar');
+  id : string;
+  user : UsersAccount;
+  check : boolean;
+  userList : string[] = ["1","2","3","4","5","6","7","8","9"]
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public storage: Storage, private app: App, public restProvider: RestProvider) {
+    this.storage.get("AccountID").then((data) => {
+      this.id = data;
+      this.restProvider.getUserInfomation(this.id).then((data) => {
+        this.user = JSON.parse(JSON.stringify(data));
+        this.SettingRecruitment().then((data) => {
+          this.check = data;
+        });
+      });
+    });
   }
-
-  ionViewWillEnter() {
-    this.tabBarElement.style.display = 'none';
+  SettingRecruitment(): Promise<boolean> {
+    return new Promise((resolve, reject) => {
+      if (this.user.type == "student") {
+        resolve(true);
+      }else
+      resolve(false);
+    });
   }
- 
-  ionViewWillLeave() {
-    this.tabBarElement.style.display = 'flex';
-  }
-  
   takeMeBack() {
     this.navCtrl.parent.select(0);
   }
