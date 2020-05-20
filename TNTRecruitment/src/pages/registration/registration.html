@@ -10,56 +10,99 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-list>
+<ion-content padding >
+  <ion-img class="avatar1" src="assets/imgs/teamwork.jpg"></ion-img>
+  <ion-list >
+    <ion-row class ='border'>
     <form [formGroup]="formRegistration">
-      <ion-item>
-        <ion-input placeholder="Email" formControlName="account">
-        </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-input placeholder="Mật khẩu" formControlName="password">
-        </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-input placeholder="Tên" formControlName="name">
-        </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label color="primary">Địa chỉ công ty</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label color="dark">Tỉnh</ion-label>
-        <ion-select #A (ionChange)="onTinhChange(A.value)" >
-          <ion-option *ngFor="let T of Tinh" [value]="T">{{T}}</ion-option>
-        </ion-select>
-      </ion-item>
-      <ion-item>
-        <ion-label color="dark">Thành phố/Quận</ion-label>
-        <ion-select #B (ionChange)="onTpChange(B.value)">
-          <ion-option *ngFor="let TP of ThanhPho" [value]="TP">{{TP}}</ion-option>
-        </ion-select>
-      </ion-item>
-      <ion-item>
-        <ion-input placeholder="Số nhà" formControlName="address">
-        </ion-input>
-      </ion-item>
       <ion-item >
-        <ion-label color="dark">Quy mô công ty</ion-label>
-        <ion-select #S (ionChange)="onCompanySizeChange(S.value)">
-          <ion-option *ngFor="let QM of QuyMo" [value]="QM">{{QM}}</ion-option>
-        </ion-select>
-      </ion-item>
-      <ion-item>
-        <ion-input placeholder="Người liên hệ" formControlName="contact">
+        <ion-label icon-end>
+          Tài khoản: 
+          <ion-icon name="person"></ion-icon>
+        </ion-label>
+        <ion-input placeholder formControlName="account" >
         </ion-input>
       </ion-item>
+      <ion-item>
+        <ion-label  icon-end>
+          Mật khẩu: 
+          <ion-icon name="key"></ion-icon>
+        </ion-label>
+        <ion-input placeholder formControlName="password">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label  icon-end>
+          Tên: 
+          <ion-icon name="pricetag"></ion-icon>
+        </ion-label>
+        <ion-input placeholder formControlName="name">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label  icon-end>
+          Giới tính: 
+          <ion-icon name="heart"></ion-icon>
+        </ion-label>
+        <ion-input placeholder formControlName="sex">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label  icon-end>
+          Ngày sinh:
+          <ion-icon name="ribbon"></ion-icon>
+        </ion-label>
+        <ion-input placeholder formControlName="dateofbirth">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label icon-end>
+          Email 
+          <ion-icon name="mail-open"></ion-icon>
+        </ion-label>
+        <ion-input placeholder formControlName="email">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label  icon-end>
+          Số điện thoại: 
+          <ion-icon name="call"></ion-icon>
+        </ion-label>
+        <ion-input placeholder formControlName="phone">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label  icon-end>
+          Địa chỉ: 
+          <ion-icon name="home"></ion-icon>
+        </ion-label>
+        <ion-input placeholder formControlName="address">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label  icon-end>
+          Trường học:  
+          <ion-icon name="school"></ion-icon>
+        </ion-label>
+        <ion-input placeholder formControlName="school">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label  icon-end>
+          Chuyên môn: 
+          <ion-icon name="medal"></ion-icon>
+        </ion-label>
+        <ion-input placeholder formControlName="specialize">
+        </ion-input>
+      </ion-item>
+    </form>
+      </ion-row>
       <ion-item>
         <ion-buttons>
-          <button class='custombutton' ion-button round outline color="secondary" (click)="Login($event)">
+          <button class='custombutton' ion-button round outline color="secondary" (click)="Login($event)" >           
             Đăng ký
           </button></ion-buttons>
       </ion-item>
-    </form>
+    
   </ion-list>
 </ion-content>
