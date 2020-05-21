@@ -3,10 +3,17 @@ ion-img.pic
 {
     width: 25%;
     height: 80px;
+    
     img{
       width: 100%;
       height: 100%;
     }
+}
+div.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 button.custom1{
@@ -20,8 +27,8 @@ button.custom1{
     text-align: center;
   }
   ion-avatar.icon-avatar{
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     margin: 3px;
     img{
       width: 100%;
@@ -30,13 +37,15 @@ button.custom1{
     }
   }
     ion-avatar.plus-avatar{
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
       margin: 3px;
+      position: relative;
+    text-align: center;
       img{
         width: 100%;
         height: 100%;
         border-radius: 50%;
-         filter: blur(3px);
+         filter: blur(2px);
       }
   }
