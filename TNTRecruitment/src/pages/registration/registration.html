@@ -10,99 +10,70 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding >
-  <ion-img class="avatar1" src="assets/imgs/teamwork.jpg"></ion-img>
-  <ion-list >
-    <ion-row class ='border'>
-    <form [formGroup]="formRegistration">
-      <ion-item >
-        <ion-icon name="person"></ion-icon>   
-        <ion-label icon-start>          
-          Tài khoản:       
-        </ion-label>
-        <ion-input placeholder formControlName="account" >
-        </ion-input>
-      </ion-item>
-      <ion-item >
-        <ion-label>
-          Mật khẩu: 
-          <ion-icon  name="key"></ion-icon>
-        </ion-label>
-        <ion-input placeholder formControlName="password">
-        </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label  icon-end>
-          Tên: 
-          <ion-icon name="pricetag"></ion-icon>
-        </ion-label>
-        <ion-input placeholder formControlName="name">
-        </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label  icon-end>
-          Giới tính: 
-          <ion-icon name="heart"></ion-icon>
-        </ion-label>
-        <ion-input placeholder formControlName="sex">
-        </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label  icon-end>
-          Ngày sinh:
-          <ion-icon name="ribbon"></ion-icon>
-        </ion-label>
-        <ion-input placeholder formControlName="dateofbirth">
-        </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label icon-end>
-          Email 
-          <ion-icon name="mail-open"></ion-icon>
-        </ion-label>
-        <ion-input placeholder formControlName="email">
-        </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label  icon-end>
-          Số điện thoại: 
-          <ion-icon name="call"></ion-icon>
-        </ion-label>
-        <ion-input placeholder formControlName="phone">
-        </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label  icon-end>
-          Địa chỉ: 
-          <ion-icon name="home"></ion-icon>
-        </ion-label>
-        <ion-input placeholder formControlName="address">
-        </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label  icon-end>
-          Trường học:  
-          <ion-icon name="school"></ion-icon>
-        </ion-label>
-        <ion-input placeholder formControlName="school">
-        </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label  icon-end>
-          Chuyên môn: 
-          <ion-icon name="medal"></ion-icon>
-        </ion-label>
-        <ion-input placeholder formControlName="specialize">
-        </ion-input>
-      </ion-item>
-    </form>
-      </ion-row>
-      <ion-item>
-        <ion-buttons>
-          <button class='custombutton5' ion-button round outline color="secondary" (click)="Login($event)" >           
-            Đăng ký
-          </button></ion-buttons>
-      </ion-item>
-    
+<ion-content padding>
+  <ion-img class="avatar1" src="assets/imgs/bg_registration.png"></ion-img>
+  <ion-list>
+    <ion-row class='border'>
+      <form [formGroup]="formRegistration">
+        <ion-item>
+          <ion-icon name="person" item-left></ion-icon>
+          <ion-label icon-start>Tài khoản:</ion-label>
+          <ion-input placeholder formControlName="account"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="key" item-left></ion-icon>
+          <ion-label>Mật khẩu:</ion-label>
+          <ion-input placeholder formControlName="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="pricetag" item-left></ion-icon>
+          <ion-label icon-end>Tên:</ion-label>
+          <ion-input placeholder formControlName="name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="man" item-left></ion-icon>
+          <ion-label icon-end>Giới tính:</ion-label>
+          <ion-input placeholder formControlName="sex"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="calendar" item-left></ion-icon>
+          <ion-label icon-end>Ngày sinh:</ion-label>
+          <ion-input placeholder formControlName="dateofbirth"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="mail-open" item-left></ion-icon>
+          <ion-label icon-end>Email</ion-label>
+          <ion-input placeholder formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="call" item-left></ion-icon>
+          <ion-label icon-end>Số điện thoại:</ion-label>
+          <ion-input placeholder formControlName="phone"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="home" item-left></ion-icon>
+          <ion-label icon-end>Địa chỉ:</ion-label>
+          <ion-input placeholder formControlName="address"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="school" item-left></ion-icon>
+          <ion-label>Trường học:</ion-label>
+          <ion-input placeholder formControlName="school"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="md-desktop" item-left></ion-icon>
+          <ion-label>Chuyên môn:</ion-label>
+          <ion-input placeholder formControlName="specialize"></ion-input>
+        </ion-item>
+      </form>
+    </ion-row>
+    <ion-item>
+      <ion-buttons>
+        <button class='custombutton5' ion-button round outline color="secondary" (click)="Login($event)">
+          Đăng ký
+        </button>
+      </ion-buttons>
+    </ion-item>
+
   </ion-list>
 </ion-content>
