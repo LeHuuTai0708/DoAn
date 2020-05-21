@@ -15,7 +15,7 @@ ion-header.color
   color: white;
 }
   .getstart{
-    background-image: url('../../assets/imgs/background1.png');
+    background-image: url('../../assets/imgs/bg2.png');
   background-repeat: no-repeat;
   background-size:cover;
   
@@ -51,6 +51,11 @@ ion-header ion-icon.back-button-icon.icon {
     border-bottom-right-radius: 30px;
     //border-style: dotted;
     // display: grid;
+  }
+  
+  ion-label.color1
+  {
+    color: white;
   }
   ion-img.avatar1{
     width: 80%;
