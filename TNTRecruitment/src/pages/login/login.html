@@ -19,10 +19,12 @@
    
   <form [formGroup]="formLogin">
     <ion-item  class='bordertop'>
-      <ion-label class='color1' floating>Email</ion-label>
+      <ion-icon class='icon' name="person-outline" item-left></ion-icon>
+      <ion-label class='color1' floating >Email</ion-label>
       <ion-input   formControlName="email" type="email"></ion-input>
     </ion-item>
     <ion-item class='borderbottom'>
+      <ion-icon name="key-outline" item-left></ion-icon>
       <ion-label class='color1' floating>Password</ion-label>
       <ion-input formControlName="password" type="password"></ion-input>
     </ion-item> 
