@@ -13,11 +13,11 @@
 <ion-content padding center>
   <div *ngIf="Notification?.length > 0">
     <ion-list class="my-list" *ngFor="let item of Notification">
-      <ion-item>
+      <ion-item (click)="itemNotification()">
         <ion-avatar item-start>
           <img src="assets/imgs/logo.png">
         </ion-avatar>
-        <h2>FPT Software</h2>
+        <h2>Có 3 người ứng tuyển</h2>
         <p>May 8, 2020</p>
         <h5 text-wrap>[HCM] 03 Senior Salesforce Developers Salesforce Developers</h5>
       </ion-item>

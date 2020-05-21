@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ListApplicationPage } from '../list-application/list-application';
 
 /**
  * Generated class for the RecruitmentDetailPage page.
@@ -41,6 +42,11 @@ export class RecruitmentDetailPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RecruitmentDetailPage');
   }
+
+  itemList(){
+    this.navCtrl.push(ListApplicationPage);
+  }
+
   Login(){
 
   }
