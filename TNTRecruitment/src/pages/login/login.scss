@@ -14,4 +14,40 @@ page-login {
       ion-buttons.button{
         width: 100%;
     }
+    .getstart{
+      background-image: url('../../assets/imgs/background1.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    }
+
+    ion-col.Lo-golg {
+      width: 100%;
+      height: 300px;
+     
+      text-align: center;
+    }
+
+    ion-img.logolg{
+      width: 80%;
+      height: 375px;
+      padding:0;
+      text-align: center;
+      background: none;
+    }
+
+    ion-item.bordertop
+  {
+    color: black;  
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
+  }
+  ion-item.borderbottom
+  {
+    color: black;
+   
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+  }
 }

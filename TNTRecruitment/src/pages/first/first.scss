@@ -28,15 +28,24 @@ ion-col.Lo-gin {
   }
   
   ion-img.logo{
-    width: 91%;
+    width: 80%;
     height: 375px;
     padding:0;
     text-align: center;
+    background: none;
   }
 
+  .getstart{
+    background-image: url('../../assets/imgs/background1.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+}
   button.custom{
     width: 75%;
     margin-top: 16px;
+    background-color: rgb(253, 253, 253);
+    color: rgb(21, 226, 48);
   }
   ion-buttons.custombuttons{
     text-align: center;
