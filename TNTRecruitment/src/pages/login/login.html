@@ -18,15 +18,13 @@
     </ion-row>
    
   <form [formGroup]="formLogin">
-    <ion-item  class='bordertop'>
+    <ion-item  class='bordertop1'>
       <ion-icon class='icon' name="mail" item-left></ion-icon>
-      <ion-label class='color1'  >Email: </ion-label>
-      <ion-input   formControlName="email" type="email"></ion-input>
+      <ion-input class='color1' placeholder="Tài khoản"  formControlName="email" type="email"></ion-input>
     </ion-item>
-    <ion-item class='borderbottom'>
+    <ion-item class='borderbottom1'>
       <ion-icon name="key" item-left></ion-icon>
-      <ion-label class='color1' >Password: </ion-label>
-      <ion-input formControlName="password" type="password"></ion-input>
+      <ion-input class='color1' placeholder="Mật khẩu" formControlName="password" type="password"></ion-input>
     </ion-item> 
   </form>
  

@@ -35,27 +35,27 @@ page-login {
       background: none;
     }
 
-    ion-item.bordertop
+    ion-item.bordertop1
   {
     background: transparent;
     color: black;  
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    padding-right: 5px;
     padding-top: 20px;
     
   }
-  ion-item.borderbottom
+  ion-item.borderbottom1
   {
     color: black;
     background: transparent;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    
   }
 
   ion-icon.icon
   {
     // padding-top: 25px;
+    color: white;
+  }
+
+  ion-input.color1{
     color: white;
   }
 }
