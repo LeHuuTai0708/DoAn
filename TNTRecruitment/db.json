@@ -23,14 +23,15 @@
   "student": [
     {
       "id": "3dc19c9fc62feda7e0d9d97890afd05b",
-      "name": "Le Van B",
+      "name": "Lê Hữu Tài",
       "sex": "Nam",
       "dateofbirth": "27/08/1998",
       "phone": "0863242312",
       "email": "lehuutai@gmail.com",
-      "address": "47/3/ Lâm Đồng/ Đà Lạt",
+      "address": "66/5, Lâm Đồng, Đà Lạt",
       "school": "Đại học Đà Lạt",
-      "specialize": "Java, C#, C++"
+      "specialize": "Java, C#, C++",
+      "image": "http://kenh14cdn.com/2020/3/9/8895050513403965828145543325214026169843712o-15837286161951850001922.jpg"
     },
     {
       "id": "c4ca4238a0b555820dcc509a6f75849b",
@@ -54,7 +55,7 @@
       "address": "47/3/ Lâm Đồng/ Đà Lạt",
       "school": "Đại học Đà Lạt",
       "specialize": "Java, C#, C++",
-      "image": "https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png"
+      "image": "https://itviec.com/nha-tuyen-dung/toshiba-software-development-viet-nam-co-ltd"
     },
     {
       "id": "3c5fd894a39e0c326bb663f63ec5a090",
@@ -93,15 +94,15 @@
   "company": [
     {
       "id": "c4ca4238a0b923820dcc509a6f75849b",
-      "name": "FPT Software",
-      "headquarters": "Hà Nội",
-      "address": "Hà Nội",
-      "email": "fpt@gmail.com",
-      "phone": "030303030303",
-      "website": "fpt.com",
+      "name": "Toshiba",
+      "headquarters": "Japan",
+      "address": "Ba Đình, Hà Nội",
+      "email": "toshiba@gmail",
+      "phone": "0382254455",
+      "website": "toshiba.com",
       "worktime": "T2 - T6",
       "specialize": "Java, C#, C++",
-      "image": "https://cdn.itviec.com/employers/nashtech/logo/w170/nBaSjKy2e68gEwoJxsLk5zCe/logo.jpg"
+      "image": "https://cdn.itviec.com/photos/26962/processed_headline_photo/toshiba-software-development-viet-nam-co-ltd-tuyen-dung-viec-lam-IT-headline_photo.jpg"
     },
     {
       "id": "2",
@@ -132,7 +133,7 @@
     {
       "id": "c4ca4238a0b923820dcc509a6f75849b",
       "recid": "c4ca4238",
-      "image": "https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png",
+      "image": "https://cdn.itviec.com/employers/lg-development-center-vietnam/logo/w170/kb3U11PfmJFtdPgCEMaUJMNn/lg-development-center-vietnam-logo.png",
       "companyName": "FPT Software",
       "date": "1 ngày trước",
       "title": "[HCM] 05 Senior Java Developers ~ $2,000",
