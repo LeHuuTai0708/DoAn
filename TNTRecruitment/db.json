@@ -11,6 +11,24 @@
       "email": "1",
       "pass": "1",
       "type": "company"
+    },
+    {
+      "email": "lehuutai",
+      "id": "3c5fd894a39e0c326bb663f63ec5a090",
+      "pass": "1",
+      "type": "student"
+    },
+    {
+      "email": "12",
+      "id": "c20ad4d76fe97759aa27a0c99bff6710",
+      "pass": "",
+      "type": "student"
+    },
+    {
+      "email": "demon",
+      "id": "74186adf7f381c816fbb8dab121a6973",
+      "pass": "123456",
+      "type": "student"
     }
   ],
   "notification": [],
@@ -37,6 +55,39 @@
       "school": "Đại học Đà Lạt",
       "specialize": "Java, C#, C++",
       "image": "https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png"
+    },
+    {
+      "id": "3c5fd894a39e0c326bb663f63ec5a090",
+      "name": "",
+      "sex": "",
+      "dateofbirth": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "school": "",
+      "specialize": ""
+    },
+    {
+      "id": "c20ad4d76fe97759aa27a0c99bff6710",
+      "name": "",
+      "sex": "",
+      "dateofbirth": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "school": "",
+      "specialize": ""
+    },
+    {
+      "id": "74186adf7f381c816fbb8dab121a6973",
+      "name": "Le Huu Tai",
+      "sex": "Nam",
+      "dateofbirth": "19/08/1998",
+      "phone": "07852345654",
+      "email": "demon@gmail.com",
+      "address": "Đà Lạt",
+      "school": "Đà Lạt",
+      "specialize": "C++"
     }
   ],
   "company": [
