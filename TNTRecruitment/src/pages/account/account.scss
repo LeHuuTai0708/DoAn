@@ -7,6 +7,7 @@ page-account {
     width: 100%;
     height: 250px;
     padding: 0px;
+    border-radius: 50%;
       img{
         width: 100%;
         height: 100%;
@@ -20,5 +21,53 @@ page-account {
 
   ion-buttons.account-button{
     width: 45%;
+  }
+
+  ion-item.bordertop
+  {
+    color: black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
+    background-color: rgb(239, 240, 238);
+
+  }
+
+  ion-item.borderbottom
+  {
+    color: black;
+    // border: 2px solid rgb(8, 95, 8);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    //border-style: dotted;
+    // display: grid;
+    background-color: rgb(239, 240, 238);
+  }
+
+  ion-item.itemcolor
+  {
+    background-color: rgb(239, 240, 238);
+  }
+
+  ion-list.border
+  {
+    padding-top: 15px;
+  }
+
+  ion-list.border1
+  {
+    padding-top: 23px;
+  }
+
+  ion-row.padbutton
+  {
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+
+  ion-row.padbutton1
+  {
+    padding-left: 20px;
+    
   }
 }
