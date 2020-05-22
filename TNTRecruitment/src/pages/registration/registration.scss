@@ -1,4 +1,84 @@
-button.custombutton{
+button.custombutton5{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
+    background-color: rgb(21, 226, 48);
+    color: white;
   }
+
+ion-title.word
+{
+  color: white;
+}
+
+ion-header.color
+{
+  color: white;
+}
+  .getstart{
+    background-image: url('../../assets/imgs/bg2.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+}
+
+ion-header ion-icon.back-button-icon.icon {
+  color: white;
+}
+
+.bar-button-default-ios{
+  color:white;
+}
+
+  ion-row.border
+  {
+    padding-top: 17px;
+  }
+
+  ion-item.bordertop
+  {
+    color: black;
+    // border: 2px solid rgb(8, 95, 8);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    //border-style: dotted;
+    // display: grid;
+  }
+  ion-item.borderbottom
+  {
+    color: black;
+    // border: 2px solid rgb(8, 95, 8);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    //border-style: dotted;
+    // display: grid;
+  }
+  
+  ion-label.color1
+  {
+    color: white;
+  }
+  ion-img.avatar1{
+    width: 80%;
+    height: 280px;
+    margin-left: 32px;
+    text-align: center;
+    background-color: white;
+    background: none;
+
+    // img{
+    //   text-align: center;
+    // }
+  
+    ion-icon{
+      position: absolute;
+      left: 20px;
+    }
+    ion-content.content
+    {
+      background-color: rgb(21, 226, 48);
+    }
+  }
+  
+  
+  
+    
