@@ -4,27 +4,33 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-  <ion-navbar>
-    <ion-title>LoginPage</ion-title>
+<ion-header no-border>
+  <ion-navbar transparent>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <form [formGroup]="formLogin">
-    <ion-item>
-      <ion-label floating>Email</ion-label>
-      <ion-input formControlName="email" type="email"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label floating>Password</ion-label>
-      <ion-input formControlName="password" type="password"></ion-input>
-    </ion-item>
-  </form>
+<ion-content padding class='getstart'>
   <ion-grid>
+    <ion-row>
+      <ion-col class='Lo-golg'>
+      <ion-img class = 'logolg' src="assets/imgs/logologin.png"></ion-img>
+      </ion-col>
+    </ion-row>
+   
+  <form [formGroup]="formLogin">
+    <ion-item  class='bordertop1'>
+      <ion-icon class='icon' name="mail" item-left></ion-icon>
+      <ion-input class='color1' placeholder="Tài khoản"  formControlName="email" type="email"></ion-input>
+    </ion-item>
+    <ion-item class='borderbottom1'>
+      <ion-icon name="key" item-left></ion-icon>
+      <ion-input class='color1' placeholder="Mật khẩu" formControlName="password" type="password"></ion-input>
+    </ion-item> 
+  </form>
+ 
     <ion-row class="my-col">
       <ion-buttons class="button">
-        <button class='custombutton' ion-button round outline color="secondary" (click)="Login($event)">
+        <button class='custombutton5' ion-button round outline color="secondary" (click)="Login($event)">
           Đăng nhập
         </button></ion-buttons>
     </ion-row>

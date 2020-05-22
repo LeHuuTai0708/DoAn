@@ -21,6 +21,7 @@ import { NotificationPage } from '../pages/notification/notification';
 import { ProfileScreenPage } from '../pages/profile-screen/profile-screen';
 import { RecruitmentDetailPage } from '../pages/recruitment-detail/recruitment-detail';
 import { CompanyDetailPage } from '../pages/company-detail/company-detail';
+import { UpdateAccountPage } from '../pages/update-account/update-account';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { CompanyDetailPage } from '../pages/company-detail/company-detail';
     AddRecruitmentPage,
     ProfileScreenPage,
     RecruitmentDetailPage,
-    CompanyDetailPage
+    CompanyDetailPage,
+    UpdateAccountPage
 
   ],
   imports: [
@@ -61,13 +63,14 @@ import { CompanyDetailPage } from '../pages/company-detail/company-detail';
     AddRecruitmentPage,
     ProfileScreenPage,
     RecruitmentDetailPage,
-    CompanyDetailPage
+    CompanyDetailPage,
+    UpdateAccountPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     RestProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }

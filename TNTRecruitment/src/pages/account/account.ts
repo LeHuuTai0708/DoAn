@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { UsersAccount } from '../../Models/Users';
+import { UpdateAccountPage } from '../update-account/update-account';
 
 /**
  * Generated class for the AccountPage page.
@@ -67,5 +68,9 @@ export class AccountPage {
   Exit() {
     this.storage.clear();
     this.app.getRootNav().setRoot(FirstPage);
+  }
+
+  UpdateAccount() {
+    this.navCtrl.push(UpdateAccountPage);
   }
 }
