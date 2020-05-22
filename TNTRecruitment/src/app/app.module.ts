@@ -68,8 +68,8 @@ import { ListApplicationPage } from '../pages/list-application/list-application'
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     RestProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }
