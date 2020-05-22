@@ -19,3 +19,11 @@ button.custom1{
     width: 100%;
     text-align: center;
   }
+
+  ion-title.navcolor{
+    background-color: rgb(21, 226, 48);
+    .toolbar-title {
+      color: white;
+    }
+    
+  }
