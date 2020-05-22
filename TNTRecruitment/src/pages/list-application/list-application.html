@@ -1,0 +1,23 @@
+<!--
+  Generated template for the ListApplicationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>ListApplicationPage</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label color="secondary">Danh sách ứng tuyển</ion-label>
+  </ion-item>
+  <ion-list *ngFor='let item of ListApplication'>
+    <ion-item (Click)="itemApplication()">
+      <ion-img class='pic' item-start src="assets/imgs/nashtech.jpg"></ion-img>
+      <h2>Lê Hữu Tài</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>

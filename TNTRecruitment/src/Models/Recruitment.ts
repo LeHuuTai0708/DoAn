@@ -1,8 +1,10 @@
 export class Recruitment {
     id : string;
+    recid: string;
     image: String;
     companyName: String;
-    date: String;
-    title: String;
-    detail: String;
+    date: string;
+    title: string;
+    detail: string;
+    userapply: string[];
 }

@@ -54,9 +54,6 @@ export class RecruitmentPage {
     console.log('ionViewDidLoad RecruitmentPage');
   }
 
-  presentAlert() {
-    this.navCtrl.push(RecruitmentDetailPage);
-  }
   CreateRecruitment() {
     this.navCtrl.push(AddRecruitmentPage);
   }
