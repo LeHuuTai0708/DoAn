@@ -6,9 +6,9 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title >Recruitment</ion-title>
-    <ion-buttons  end>
-       <button ion-button color="secondary" (click)="CreateRecruitment()" class = "buttonCreate"> Thêm mới 
+    <ion-title class="navcolor">Tuyển Dụng</ion-title>
+    <ion-buttons  end *ngIf="check">
+       <button ion-button class="addcolor" (click)="CreateRecruitment()" class = "buttonCreate"> Thêm mới 
       <ion-icon name="add" class = "Icon"></ion-icon>
     </button></ion-buttons>
   </ion-navbar>
@@ -17,7 +17,7 @@
 <ion-content padding>
   <ion-list *ngFor='let item of RecruitmentData'>
     <ion-card>
-      <ion-item>
+      <ion-item (click)="DetailCompany(item.id)">
         <ion-avatar item-start>
           <img src={{item.image}}>
         </ion-avatar>
@@ -31,7 +31,7 @@
         <p>{{item.detail}}</p>
       </ion-card-content>
       <ion-item>
-        <button (click)="presentAlert()" ion-button icon-start clear item-end color="secondary" style="font-size:16px">
+        <button (click)="RecruitmentDetail()" ion-button icon-start clear item-end color="secondary" style="font-size:16px">
           Xem thêm
         </button>
       </ion-item>

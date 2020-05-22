@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ProfileScreenPage } from '../profile-screen/profile-screen';
 
 /**
  * Generated class for the CandidatePage page.
@@ -22,4 +23,8 @@ export class CandidatePage {
     console.log('ionViewDidLoad CandidatePage');
   }
 
+  ProScreen(){
+    this.navCtrl.push(ProfileScreenPage);
+
+  }
 }

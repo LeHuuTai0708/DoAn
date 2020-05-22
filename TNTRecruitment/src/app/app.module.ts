@@ -1,3 +1,4 @@
+import { ListApplicationPage } from './../pages/list-application/list-application';
 import { LoginPage } from './../pages/login/login';
 import { CandidatePage } from './../pages/candidate/candidate';
 import { RecruitmentPage } from './../pages/recruitment/recruitment';
@@ -18,6 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { RestProvider } from '../providers/rest/rest';
 import { IonicStorageModule } from '@ionic/storage';
 import { NotificationPage } from '../pages/notification/notification';
+import { ProfileScreenPage } from '../pages/profile-screen/profile-screen';
+import { RecruitmentDetailPage } from '../pages/recruitment-detail/recruitment-detail';
+import { CompanyDetailPage } from '../pages/company-detail/company-detail';
 import { UpdateAccountPage } from '../pages/update-account/update-account';
 
 @NgModule({
@@ -33,7 +37,11 @@ import { UpdateAccountPage } from '../pages/update-account/update-account';
     LoginPage,
     RegistrationPage,
     AddRecruitmentPage,
-    UpdateAccountPage
+    ProfileScreenPage,
+    RecruitmentDetailPage,
+    CompanyDetailPage,
+    UpdateAccountPage,
+    ListApplicationPage
 
   ],
   imports: [
@@ -55,14 +63,17 @@ import { UpdateAccountPage } from '../pages/update-account/update-account';
     LoginPage,
     RegistrationPage,
     AddRecruitmentPage,
-    UpdateAccountPage
-
+    ProfileScreenPage,
+    RecruitmentDetailPage,
+    CompanyDetailPage,
+    UpdateAccountPage,
+    ListApplicationPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     RestProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }

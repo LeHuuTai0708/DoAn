@@ -13,21 +13,9 @@
       "type": "company"
     },
     {
-      "email": "lehuutai",
-      "id": "3c5fd894a39e0c326bb663f63ec5a090",
-      "pass": "1",
-      "type": "student"
-    },
-    {
-      "email": "12",
-      "id": "c20ad4d76fe97759aa27a0c99bff6710",
-      "pass": "",
-      "type": "student"
-    },
-    {
-      "email": "demon",
-      "id": "74186adf7f381c816fbb8dab121a6973",
-      "pass": "123456",
+      "id": "c4ca4238a0b555820dcc509a6f75849b",
+      "email": "2",
+      "pass": "2",
       "type": "student"
     }
   ],
@@ -43,6 +31,18 @@
       "address": "47/3/ Lâm Đồng/ Đà Lạt",
       "school": "Đại học Đà Lạt",
       "specialize": "Java, C#, C++"
+    },
+    {
+      "id": "c4ca4238a0b555820dcc509a6f75849b",
+      "name": "Le Huu Tai",
+      "sex": "Nam",
+      "dateofbirth": "27/08/1998",
+      "email": "lehuutai@gmail.com",
+      "phone": "0792212921",
+      "address": "47/3/ Lâm Đồng/ Đà Lạt",
+      "school": "Đại học Đà Lạt",
+      "specialize": "Java, C#, C++",
+      "image": "https://i.ytimg.com/vi/mznVe0XntiU/maxresdefault.jpg"
     },
     {
       "id": "c4ca4238a0b923820dcc509a6f75849b",
@@ -130,7 +130,8 @@
   ],
   "recruitment": [
     {
-      "id": "1",
+      "id": "c4ca4238a0b923820dcc509a6f75849b",
+      "recid": "c4ca4238",
       "image": "https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png",
       "companyName": "FPT Software",
       "date": "1 ngày trước",
@@ -139,6 +140,7 @@
     },
     {
       "id": "2",
+      "recid": "c4ca4124",
       "image": "https://cdn.itviec.com/employers/nashtech/logo/w170/nBaSjKy2e68gEwoJxsLk5zCe/logo.jpg",
       "companyName": "NashTech",
       "date": "2 ngày trước",
@@ -147,6 +149,7 @@
     },
     {
       "id": "3",
+      "recid": "c4ca4457",
       "image": "https://cdn.itviec.com/employers/lg-development-center-vietnam/logo/w170/kb3U11PfmJFtdPgCEMaUJMNn/lg-development-center-vietnam-logo.png",
       "companyName": "LG Development Center Vietnam",
       "date": "2 ngày trước",
