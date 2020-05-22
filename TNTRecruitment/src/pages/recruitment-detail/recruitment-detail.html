@@ -48,15 +48,15 @@
         </p>
       </ion-card-content>
       <ion-buttons class="custombuttons1" *ngIf="check">
-        <button class='custom1' ion-button round outline color="secondary" (click)="Login($event)">
+        <button class='custom1' ion-button round outline color="secondary" (click)="Apply($event)">
           Chấp nhận
         </button></ion-buttons>
     </ion-item>
     <ion-grid>
-      <ion-item>
+      <ion-item *ngIf="!check">
         <ion-label color="secondary">Ứng viên</ion-label>
       </ion-item>
-      <ion-row>
+      <ion-row *ngIf="!check">
         <div *ngFor="let item of userList ; let i=index">
           <div *ngIf="i < 5">
             <ion-avatar class="icon-avatar">
@@ -65,7 +65,7 @@
           </div>
         </div>
         <div>
-          <ion-avatar class="plus-avatar">
+          <ion-avatar class="plus-avatar" (click)="itemList()">
             <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
           <div  style="font-size:20px" class="centered">+{{userList.length - 5}}</div>
           </ion-avatar>
