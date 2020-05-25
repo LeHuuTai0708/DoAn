@@ -1,3 +1,4 @@
+import { Recruitment } from './../../Models/Recruitment';
 import { UsersAccount } from './../../Models/Users';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
@@ -19,15 +20,18 @@ import { ListApplicationPage } from '../list-application/list-application';
 })
 export class RecruitmentDetailPage {
   tabBarElement: any;
-  id : string;
-  user : UsersAccount;
-  check : boolean;
-  userList : string[] = ["1","2","3","4","5","6","7","8","9"]
+  id: string;
+  user: UsersAccount;
+  check: boolean;
+  recruitment: Recruitment;
+  userList: string[] = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public storage: Storage, private app: App, public restProvider: RestProvider) {
-    this.storage.get("AccountID").then((data) => {
-      this.id = data;
-      this.restProvider.getUserInfomation(this.id).then((data) => {
+    this.id = this.navParams.get("id");
+    this.restProvider.getRecruitmentInfomation(this.id).then((data) => {
+      this.recruitment = JSON.parse(JSON.stringify(data));
+      console.log(this.recruitment);
+      this.restProvider.getUserInfomation(this.recruitment.companyid).then((data) => {
         this.user = JSON.parse(JSON.stringify(data));
         this.SettingRecruitment().then((data) => {
           this.check = data;
@@ -39,8 +43,8 @@ export class RecruitmentDetailPage {
     return new Promise((resolve, reject) => {
       if (this.user.type == "student") {
         resolve(true);
-      }else
-      resolve(false);
+      } else
+        resolve(false);
     });
   }
   takeMeBack() {
@@ -50,11 +54,11 @@ export class RecruitmentDetailPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RecruitmentDetailPage');
   }
-  
-  itemList(){
+
+  itemList() {
     this.navCtrl.push(ListApplicationPage);
   }
-  Apply(){
+  Apply() {
 
   }
 }
