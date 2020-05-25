@@ -8,6 +8,7 @@ export class Recruitment {
     vacancies : string;
     amount : string;
     description : string;
+    salary : string;
     address : string;
     detail: string;
     userapply: string[];

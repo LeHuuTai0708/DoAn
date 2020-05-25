@@ -7,53 +7,44 @@
 <ion-header>
   <ion-navbar>
     <ion-title class='navcolor'>Đăng Tin Tuyển Dụng</ion-title>
-    <ion-buttons  end>
-      <button ion-button color="secondary" (click)="Continue($event)" class = "buttonCreate"> Tiếp tục 
-     
-   </button></ion-buttons>
+    <ion-buttons end>
+      <button ion-button class='custom1' ion-button round (click)="Continue($event)" class="buttonCreate"> Tiếp tục
+
+      </button></ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-list>
+    <form [formGroup]="formAddRecruitment">
+      <ion-item>
+        <ion-label color="secondary" stacked>Tiêu đề</ion-label>
+        <ion-input placeholder formControlName="title"></ion-input>
+      </ion-item>
     <ion-item>
       <ion-label color="secondary" stacked>Vị trí/ Chức danh</ion-label>
-      <ion-input placeholder></ion-input>
+      <ion-input placeholder formControlName="vacancies"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label color="secondary" stacked>Số lượng cần tuyển</ion-label>
-      <ion-input placeholder></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label color="secondary" stacked>Yêu cầu giới tính</ion-label>
-      <ion-select>
-        <ion-option *ngFor="let GT of GioiTinh" [value] = "GT">{{GT}}</ion-option>
-      </ion-select>    
-    </ion-item>
-    <ion-item>
-      <ion-label color="secondary" stacked>Yêu cầu kinh nghiệm</ion-label>
-      <ion-select>
-        <ion-option *ngFor="let KN of KinhNghiem" [value] = "KN">{{KN}}</ion-option>
-      </ion-select>    
-    </ion-item>
-    <ion-item>
-      <ion-label color="secondary" stacked>Yêu cầu trình độ</ion-label>
-      <ion-select>
-        <ion-option *ngFor="let TD of TrinhDo" [value] = "TD">{{TD}}</ion-option>
-      </ion-select>    
-    </ion-item>
-    <ion-item>
-      <ion-label color="secondary" stacked>Mức lương</ion-label>
-      <ion-input placeholder></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label color="secondary" stacked>Yêu cầu công việc</ion-label>
-      <ion-input placeholder></ion-input>
+      <ion-input placeholder formControlName="amount"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label color="secondary" stacked>Mô tả công việc</ion-label>
-      <ion-input placeholder></ion-input>
+      <ion-input placeholder formControlName="description"></ion-input>
     </ion-item>
-     
+    <ion-item>
+      <ion-label color="secondary" stacked>Mức lương</ion-label>
+      <ion-input placeholder formControlName="salary"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="secondary" stacked>Địa chỉ</ion-label>
+      <ion-input placeholder formControlName="address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="secondary" stacked>Yêu cầu công việc</ion-label>
+      <ion-input placeholder formControlName="detail"></ion-input>
+    </ion-item>
+  </form>
   </ion-list>
 </ion-content>

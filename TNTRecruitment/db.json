@@ -140,6 +140,7 @@
       "vacancies": "Java Developers",
       "amount": "5",
       "description": "Proposing development solution with customer;",
+      "salary": "15-20 triệu",
       "address": "Hồ Chí Minh",
       "detail": "FPT Software Hanoi is looking for 05 Senior Java Developers with at least 3 years’ experience. When you join with us, you will have many opportunities for yourself: Join a challenging project related a variety of domains Work in a big project with many senior/expert people Join training on job if you need more training in project Can be promoted to Team leader/Project Manager with excellent performance",
       "userapply": ""
@@ -154,9 +155,24 @@
       "vacancies": "JJava Technical Architect",
       "amount": "5",
       "description": "Proposing architecture, solution to team and/or review, control solution of members.",
+      "salary": "15-20 triệu",
       "address": "Hồ Chí Minh",
       "detail": "Can play Technical Leader or Technical Architect role in the projects To contribute to the system architecture design Contribute to the design specifications that are in compliance with established coding quality standard of the company. To consult or support the project teams and clients on technical perspectives To support for presales activities (R&D, estimate, pilot, etc), technical interviews To perform trainings/seminars for the company To develop the new skills for project teams if any new technologies required based on the project roadmap.",
       "userapply": ""
+    },
+    {
+      "id": "b89987eb2b1964f96cd796c0dcf5a864",
+      "companyid": "c4ca4238a0b923820dcc509a6f75849b",
+      "date": "Mon May 25 2020 11:08:24 GMT+0700 (Giờ Đông Dương)",
+      "companyName": "Toshiba",
+      "image": "https://cdn.itviec.com/photos/26962/processed_headline_photo/toshiba-software-development-viet-nam-co-ltd-tuyen-dung-viec-lam-IT-headline_photo.jpg",
+      "title": "Java Developer",
+      "vacancies": "Java",
+      "amount": "5 người",
+      "description": "Code",
+      "salary": "5 triệu",
+      "address": "Hà Nội",
+      "detail": "Không"
     }
   ]
 }
