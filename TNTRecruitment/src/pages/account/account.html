@@ -10,77 +10,54 @@
   <div *ngIf="settingUserInfo; else tag">
     <ion-img class="avatar" src={{student?.image}}></ion-img>
     <ion-grid>
-      <ion-row>
-        <div style="font-size:24px">Thông tin cá nhân:</div>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Tên:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.name}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Giới Tính:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.sex}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Ngày Sinh:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.dateofbirth}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Email:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.email}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Điện thoại:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.phone}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Địa chỉ:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.address}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Trường:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.school}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Chuyên ngành:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{student?.specialize}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
+      <ion-list class='border1'>
+        <ion-row>
+          <ion-item class='bordertop'>
+            <ion-icon name="pricetag" item-left></ion-icon>
+            <ion-label icon-start>Tên:</ion-label>
+            <ion-label>{{student?.name}}</ion-label>
+          </ion-item>
+          <ion-item class='itemcolor'>
+            <ion-icon name="man" item-left></ion-icon>
+            <ion-label icon-start>Giới tính:</ion-label>
+            <ion-label>{{student?.sex}}</ion-label>
+          </ion-item>
+          <ion-item class='itemcolor'>
+            <ion-icon name="calendar" item-left></ion-icon>
+            <ion-label icon-start>Ngày sinh:</ion-label>
+            <ion-label>{{student?.dateofbirth}}</ion-label>
+          </ion-item>
+          <ion-item class='itemcolor'>
+            <ion-icon name="mail-open" item-left></ion-icon>
+            <ion-label icon-start>Email:</ion-label>
+            <ion-label>{{student?.email}}</ion-label>
+          </ion-item>
+          <ion-item class='itemcolor'>
+            <ion-icon name="call" item-left></ion-icon>
+            <ion-label icon-start>Điện thoại:</ion-label>
+            <ion-label>{{student?.phone}}</ion-label>
+          </ion-item>
+          <ion-item class='itemcolor'>
+            <ion-icon name="home" item-left></ion-icon>
+            <ion-label icon-start>Địa chỉ:</ion-label>
+            <ion-label>{{student?.address}}</ion-label>
+          </ion-item>
+          <ion-item class='itemcolor'>
+            <ion-icon name="school" item-left></ion-icon>
+            <ion-label icon-start>Trường:</ion-label>
+            <ion-label>{{student?.school}}</ion-label>
+          </ion-item>
+          <ion-item class='borderbottom'>
+            <ion-icon name="md-desktop" item-left></ion-icon>
+            <ion-label icon-start>Chuyên ngành:</ion-label>
+            <ion-label>{{student?.specialize}}</ion-label>
+          </ion-item>
+        </ion-row>
+      </ion-list>
+      <ion-row class="padbutton1">
         <ion-buttons class="account-button">
           <button class='custombutton' ion-button round outline color="secondary" (click)="UpdateAccount($event)">
-            Cập nhập
+            Cập nhật
           </button>
         </ion-buttons>
         <ion-buttons class="account-button">
@@ -93,78 +70,53 @@
   </div>
   <ng-template #tag>
     <ion-img class="avatar" src={{company?.image}}></ion-img>
-    <ion-grid>
+    <ion-list class='border'>
       <ion-row>
-        <div style="font-size:24px">Thông tin công ty:</div>
+        <ion-item class='bordertop'>
+          <ion-icon name="pricetag" item-left></ion-icon>
+          <ion-label icon-start>Tên:</ion-label>
+          <ion-label>{{company?.name}}</ion-label>
+        </ion-item>
+        <ion-item class='itemcolor'>
+          <ion-icon name="briefcase" item-left></ion-icon>
+          <ion-label icon-start>Trụ sở chính:</ion-label>
+          <ion-label>{{company?.headquarters}}</ion-label>
+        </ion-item>
+        <ion-item class='itemcolor'>
+          <ion-icon name="home" item-left></ion-icon>
+          <ion-label icon-start>Địa chỉ:</ion-label>
+          <ion-label>{{company?.address}}</ion-label>
+        </ion-item>
+        <ion-item class='itemcolor'>
+          <ion-icon name="mail-open" item-left></ion-icon>
+          <ion-label icon-start>Email:</ion-label>
+          <ion-label>{{company?.email}}</ion-label>
+        </ion-item>
+        <ion-item class='itemcolor'>
+          <ion-icon name="call" item-left></ion-icon>
+          <ion-label icon-start>Số điện thoại:</ion-label>
+          <ion-label>{{company?.phone}}</ion-label>
+        </ion-item>
+        <ion-item class='itemcolor'>
+          <ion-icon name="globe" item-left></ion-icon>
+          <ion-label icon-start>Website:</ion-label>
+          <ion-label>{{company?.website}}</ion-label>
+        </ion-item>
+        <ion-item class='itemcolor'>
+          <ion-icon name="hammer" item-left></ion-icon>
+          <ion-label icon-start>Làm việc:</ion-label>
+          <ion-label>{{company?.worktime}}</ion-label>
+        </ion-item>
+        <ion-item class='borderbottom'>
+          <ion-icon name="md-desktop" item-left></ion-icon>
+          <ion-label icon-start>Chuyên môn:</ion-label>
+          <ion-label>{{company?.specialize}}</ion-label>
+        </ion-item>
       </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Tên:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.name}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Trụ sở chính:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.headquarters}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Địa chỉ:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.address}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Email:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.email}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Số điện thoại:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.phone}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Website:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.website}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Làm việc:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">{{company?.worktime}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="my-thin-col-title">
-          <div style="font-size:18px" class="textAlignTitle">Chuyên môn:</div>
-        </ion-col>
-        <ion-col class="my-thin-col">
-          <div style="font-size:18px" class="textAlign">J{{company?.specialize}}</div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
+      <ion-row class="padbutton">
         <ion-buttons class="account-button">
           <button class='custombutton' ion-button round outline color="secondary" (click)="UpdateAccount($event)">
-            Cập nhập
+            Cập nhật
           </button>
         </ion-buttons>
         <ion-buttons class="account-button">
@@ -173,6 +125,6 @@
           </button>
         </ion-buttons>
       </ion-row>
-    </ion-grid>
+    </ion-list>
   </ng-template>
 </ion-content>
