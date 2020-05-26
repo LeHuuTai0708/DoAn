@@ -15,25 +15,23 @@
   <ion-grid class='padgrid'>
     <ion-slides class='padslide'  effect="bullets" paginationType="fraction">
       <ion-slide  *ngFor='let item of RecruitmentData' >
-        <ion-card class='slides'>
-          
-          <ion-item (click)="DetailCompany(item?.id)">
-            <button (click)="RecruitmentDetail()" ion-button icon-start clear item-end color="secondary" style="font-size:16px">
+        <ion-card class='slides'>         
+          <ion-item class ='padbutton' >
+            <button  (click)="RecruitmentDetail1()" ion-button icon-start clear item-end color="secondary" style="font-size:16px">
               Xem thêm
             </button>
-            <ion-avatar item-start>
+            <ion-avatar (click)="DetailCompany(item?.id)" item-start>
               <img src={{item?.image}}>
             </ion-avatar>
-            <h2>{{item?.companyName}}</h2>
-            <p>{{item?.date}}</p>
+            <h2 (click)="DetailCompany(item?.id)" class="ellipsiscom">{{item?.companyName}}</h2>
+            <p (click)="DetailCompany(item?.id)">{{item?.date}}</p>
           </ion-item>
           <ion-card-header>
-            <ion-card-title text-wrap>{{item?.title}}</ion-card-title>
+            <ion-card-title text-wrap >{{item?.title}}</ion-card-title>
           </ion-card-header>
-          <ion-card-content text-wrap class="limitedText">
-            <p>{{item?.detail}}</p>
-          </ion-card-content>
-          
+          <ion-card-content text-wrap class="limitedText">           
+            <p class="ellipsis">{{item?.detail}}</p>           
+          </ion-card-content>         
         </ion-card>
       </ion-slide>
    

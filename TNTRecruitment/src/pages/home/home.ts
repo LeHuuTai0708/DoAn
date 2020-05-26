@@ -29,6 +29,7 @@ export class HomePage {
   RecruitmentData: Recruitment[];
   id: String;
   
+
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public storage: Storage, private app: App, public restProvider: RestProvider) {
       this.restProvider.getRecruitmentData().then(data => {
@@ -56,7 +57,7 @@ export class HomePage {
     this.navCtrl.push(AddRecruitmentPage);
   }
 
-  RecruitmentDetail(){
+  RecruitmentDetail1(){
     this.navCtrl.push(RecruitmentDetailPage);
   }
 
@@ -65,6 +66,8 @@ export class HomePage {
     this.navCtrl.push(CompanyDetailPage,{id : id});
   }
 
+  
+  
 
 
 }

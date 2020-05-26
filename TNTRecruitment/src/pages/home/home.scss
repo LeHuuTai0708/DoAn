@@ -60,6 +60,30 @@ page-home {
       //   padding-right: 10px;
       // }
 
+      .ellipsis {
+        
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 7 ;
+        -webkit-box-orient: vertical;
+        text-align: left;
+      }
       
-      
+      .ellipsiscom{
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        display: contents;
+        -webkit-box-orient: vertical;
+      }
+
+      ion-item.padbutton{
+        margin-bottom: 5px;
+  
+        .item-button {
+          padding: 0 0.5em;
+          height: 24px;
+          font-size: 1.3rem;
+          margin-bottom: 20px;
+      }
+        }
 }
