@@ -6,30 +6,28 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title class="navcolor" >Thông tin tuyển dụng</ion-title>
+    <ion-title class="navcolor">Thông tin tuyển dụng</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-list>
     <ion-item>
-      <ion-img class='pic' item-start src="assets/imgs/nashtech.jpg"></ion-img>
-      <h2> NashTech </h2>
-      <p> May 13,2020</p>
-      <h2>Java Technical Architect</h2>
+      <ion-img class='pic' item-start src={{recruitment?.image}}></ion-img>
+      <h2> {{recruitment?.companyName}} </h2>
+      <p> {{recruitment?.date}}</p>
+      <h2>{{recruitment?.title}}</h2>
     </ion-item>
     <ion-item>
       <ion-label color="secondary">Yêu cầu công việc</ion-label>
     </ion-item>
     <ion-item>
       <ion-card-content text-wrap>
-        <p>- Nam </p>
-        <p>- 18t</p>
-        <p>- Có bằng cử nhân.</p>
-        <p>- Lương 5 - 10 triệu</p>
-        <p>- Kinh nghiệm 3- 5 năm</p>
-        <p>- Ham học hỏi
-        </p>
+        <p>-Vị trí: {{recruitment?.vacancies}} </p>
+        <p>-Số lượng: {{recruitment?.amount}}</p>
+        <p>-Mô tả: {{recruitment?.description}}</p>
+        <p>-Mức lương: {{recruitment?.salary}}</p>
+        <p>-Địa chỉ: {{recruitment?.address}}</p>
       </ion-card-content>
     </ion-item>
     <ion-item>
@@ -37,26 +35,18 @@
     </ion-item>
     <ion-item>
       <ion-card-content text-wrap>
-        <p>- Can play Techical Leader of Technical Architect role in the projects</p>
-        <p>- To contribute to the system architeture degisn</p>
-        <p>- Contribute to the design specifications that are in compliance with established coding quality standard of
-          the company.</p>
-        <p>- To con sult or support the project teams and cilents on technical perspectives</p>
-        <p>- To support for presales activities ( R&D, estimate, pilot, etc) technical interviews</p>
-        <p>- To perform trainings/serminars for the company- To develop the new skills for project teams if any new
-          technologies required based on the project roadmap.
-        </p>
+        <p>{{recruitment?.detail}}</p>
       </ion-card-content>
-      <ion-buttons class="custombuttons1" *ngIf="check">
+      <ion-buttons class="custombuttons1" *ngIf="!check">
         <button class='custom1' ion-button round outline color="secondary" (click)="Apply($event)">
-          Chấp nhận
+          Ứng tuyển ngay
         </button></ion-buttons>
     </ion-item>
-    <ion-grid>
-      <ion-item *ngIf="!check">
+    <ion-grid  *ngIf="check">
+      <ion-item>
         <ion-label color="secondary">Ứng viên</ion-label>
-      </ion-item>
-      <ion-row *ngIf="!check">
+      </ion-item> 
+      <ion-row>
         <div *ngFor="let item of userList ; let i=index">
           <div *ngIf="i < 5">
             <ion-avatar class="icon-avatar">
@@ -67,7 +57,7 @@
         <div>
           <ion-avatar class="plus-avatar" (click)="itemList()">
             <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-          <div  style="font-size:20px" class="centered">+{{userList.length - 5}}</div>
+            <div style="font-size:20px" class="centered">+{{userList.length - 5}}</div>
           </ion-avatar>
         </div>
       </ion-row>

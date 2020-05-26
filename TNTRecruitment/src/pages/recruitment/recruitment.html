@@ -17,7 +17,7 @@
 <ion-content padding>
   <ion-list *ngFor='let item of RecruitmentData'>
     <ion-card>
-      <ion-item (click)="DetailCompany(item.id)">
+      <ion-item (click)="DetailCompany(item.companyid)">
         <ion-avatar item-start>
           <img src={{item.image}}>
         </ion-avatar>
@@ -31,7 +31,7 @@
         <p>{{item.detail}}</p>
       </ion-card-content>
       <ion-item>
-        <button (click)="RecruitmentDetail()" ion-button icon-start clear item-end color="secondary" style="font-size:16px">
+        <button (click)="RecruitmentDetail(item.id)" ion-button icon-start clear item-end color="secondary" style="font-size:16px">
           Xem thêm
         </button>
       </ion-item>

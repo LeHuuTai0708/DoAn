@@ -58,8 +58,8 @@ export class RecruitmentPage {
     this.navCtrl.push(AddRecruitmentPage);
   }
 
-  RecruitmentDetail(){
-    this.navCtrl.push(RecruitmentDetailPage);
+  RecruitmentDetail(id){
+    this.navCtrl.push(RecruitmentDetailPage,{id : id});
   }
 
   DetailCompany(id)
