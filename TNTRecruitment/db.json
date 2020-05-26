@@ -1,21 +1,21 @@
 {
   "users": [
     {
-      "id": "3dc19c9fc62feda7e0d9d97890afd05b",
-      "email": "Demon@gmail.com",
-      "pass": "12345678",
-      "type": "student"
-    },
-    {
       "id": "c4ca4238a0b923820dcc509a6f75849b",
       "email": "1",
       "pass": "1",
       "type": "company"
     },
     {
-      "id": "c4ca4238a0b555820dcc509a6f75849b",
+      "id": "3dc19c9fc62feda7e0d9d97890afd05b",
       "email": "2",
       "pass": "2",
+      "type": "student"
+    },
+    {
+      "email": "3",
+      "id": "eccbc87e4b5ce2fe28308fd9f2a7baf3",
+      "pass": "3",
       "type": "student"
     }
   ],
@@ -23,135 +23,86 @@
   "student": [
     {
       "id": "3dc19c9fc62feda7e0d9d97890afd05b",
-      "name": "Le Van B",
+      "name": "Lê Hữu Tài",
       "sex": "Nam",
       "dateofbirth": "27/08/1998",
       "phone": "0863242312",
       "email": "lehuutai@gmail.com",
-      "address": "47/3/ Lâm Đồng/ Đà Lạt",
-      "school": "Đại học Đà Lạt",
-      "specialize": "Java, C#, C++"
-    },
-    {
-      "id": "c4ca4238a0b555820dcc509a6f75849b",
-      "name": "Le Huu Tai",
-      "sex": "Nam",
-      "dateofbirth": "27/08/1998",
-      "email": "lehuutai@gmail.com",
-      "phone": "0792212921",
-      "address": "47/3/ Lâm Đồng/ Đà Lạt",
+      "address": "66/5, Lâm Đồng, Đà Lạt",
       "school": "Đại học Đà Lạt",
       "specialize": "Java, C#, C++",
-      "image": "https://i.ytimg.com/vi/mznVe0XntiU/maxresdefault.jpg"
+      "image": "http://kenh14cdn.com/2020/3/9/8895050513403965828145543325214026169843712o-15837286161951850001922.jpg"
     },
     {
-      "id": "c4ca4238a0b923820dcc509a6f75849b",
-      "name": "Le Huu Tai",
-      "sex": "Nam",
-      "dateofbirth": "27/08/1998",
-      "email": "lehuutai@gmail.com",
-      "phone": "0792212921",
-      "address": "47/3/ Lâm Đồng/ Đà Lạt",
-      "school": "Đại học Đà Lạt",
-      "specialize": "Java, C#, C++",
-      "image": "https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png"
-    },
-    {
-      "id": "3c5fd894a39e0c326bb663f63ec5a090",
-      "name": "",
-      "sex": "",
-      "dateofbirth": "",
-      "email": "",
-      "phone": "",
-      "address": "",
-      "school": "",
-      "specialize": ""
-    },
-    {
-      "id": "c20ad4d76fe97759aa27a0c99bff6710",
-      "name": "",
-      "sex": "",
-      "dateofbirth": "",
-      "email": "",
-      "phone": "",
-      "address": "",
-      "school": "",
-      "specialize": ""
-    },
-    {
-      "id": "74186adf7f381c816fbb8dab121a6973",
-      "name": "Le Huu Tai",
-      "sex": "Nam",
+      "id": "eccbc87e4b5ce2fe28308fd9f2a7baf3",
+      "name": "Bùi Thanh",
+      "sex": "Nữ",
       "dateofbirth": "19/08/1998",
-      "phone": "07852345654",
-      "email": "demon@gmail.com",
+      "phone": "038224455",
+      "email": "Thanhbui@gmail.com",
       "address": "Đà Lạt",
       "school": "Đà Lạt",
-      "specialize": "C++"
+      "specialize": "Ăn Ngủ"
     }
   ],
   "company": [
     {
       "id": "c4ca4238a0b923820dcc509a6f75849b",
-      "name": "FPT Software",
-      "headquarters": "Hà Nội",
-      "address": "Hà Nội",
-      "email": "fpt@gmail.com",
-      "phone": "030303030303",
-      "website": "fpt.com",
+      "name": "Toshiba",
+      "headquarters": "Japan",
+      "address": "Ba Đình, Hà Nội",
+      "email": "toshiba@gmail",
+      "phone": "0382254455",
+      "website": "toshiba.com",
       "worktime": "T2 - T6",
       "specialize": "Java, C#, C++",
-      "image": "https://cdn.itviec.com/employers/nashtech/logo/w170/nBaSjKy2e68gEwoJxsLk5zCe/logo.jpg"
-    },
-    {
-      "id": "2",
-      "name": "NashTech",
-      "headquarters": "Việt Nam",
-      "address": "Hồ Chí Minh",
-      "email": "nash@gmail.com",
-      "phone": "03030303030",
-      "website": "nash.com",
-      "worktime": "T2 - T6",
-      "specialize": "Java, C#, C++",
-      "image": "https://cdn.itviec.com/employers/nashtech/logo/w170/nBaSjKy2e68gEwoJxsLk5zCe/logo.jpg"
-    },
-    {
-      "id": "3",
-      "name": "LG Development Center Vietnam",
-      "headquarters": "Việt Nam",
-      "address": "Hồ Chí Minh",
-      "email": "lg@gmail.com",
-      "phone": "03030303030",
-      "website": "lg.com",
-      "worktime": "T2 - T6",
-      "specialize": "Java, C#, C++",
-      "image": "https://cdn.itviec.com/employers/lg-development-center-vietnam/logo/w170/kb3U11PfmJFtdPgCEMaUJMNn/lg-development-center-vietnam-logo.png"
+      "image": "https://cdn.itviec.com/photos/26962/processed_headline_photo/toshiba-software-development-viet-nam-co-ltd-tuyen-dung-viec-lam-IT-headline_photo.jpg"
     }
   ],
   "recruitment": [
     {
-      "id": "c4ca4238a0b923820dcc509a6f75849b",
-      "image": "https://cdn.itviec.com/employers/fpt-software/logo/w170/mir3HT3xtedbECJY5jVeRRgV/fpt-software-logo.png",
-      "companyName": "FPT Software",
+      "id": "c4ca4238",
+      "companyid": "c4ca4238a0b923820dcc509a6f75849b",
+      "image": "https://cdn.itviec.com/employers/lg-development-center-vietnam/logo/w170/kb3U11PfmJFtdPgCEMaUJMNn/lg-development-center-vietnam-logo.png",
+      "companyName": "Toshiba",
       "date": "1 ngày trước",
       "title": "[HCM] 05 Senior Java Developers ~ $2,000",
-      "detail": "FPT Software Hanoi is looking for 05 Senior Java Developers with at least 3 years’ experience. When you join with us, you will have many opportunities for yourself: Join a challenging project related a variety of domains Work in a big project with many senior/expert people Join training on job if you need more training in project Can be promoted to Team leader/Project Manager with excellent performance"
+      "vacancies": "Java Developers",
+      "amount": "5",
+      "description": "Proposing development solution with customer;",
+      "salary": "15-20 triệu",
+      "address": "Hồ Chí Minh",
+      "detail": "FPT Software Hanoi is looking for 05 Senior Java Developers with at least 3 years’ experience. When you join with us, you will have many opportunities for yourself: Join a challenging project related a variety of domains Work in a big project with many senior/expert people Join training on job if you need more training in project Can be promoted to Team leader/Project Manager with excellent performance",
+      "userapply": ""
     },
     {
-      "id": "2",
+      "id": "c4ca4124",
+      "companyid": "c4ca4238a0b923820dcc509a6f75849b",
       "image": "https://cdn.itviec.com/employers/nashtech/logo/w170/nBaSjKy2e68gEwoJxsLk5zCe/logo.jpg",
-      "companyName": "NashTech",
+      "companyName": "Toshiba",
       "date": "2 ngày trước",
       "title": "Java Technical Architect",
-      "detail": "Can play Technical Leader or Technical Architect role in the projects To contribute to the system architecture design Contribute to the design specifications that are in compliance with established coding quality standard of the company. To consult or support the project teams and clients on technical perspectives To support for presales activities (R&D, estimate, pilot, etc), technical interviews To perform trainings/seminars for the company To develop the new skills for project teams if any new technologies required based on the project roadmap."
+      "vacancies": "JJava Technical Architect",
+      "amount": "5",
+      "description": "Proposing architecture, solution to team and/or review, control solution of members.",
+      "salary": "15-20 triệu",
+      "address": "Hồ Chí Minh",
+      "detail": "Can play Technical Leader or Technical Architect role in the projects To contribute to the system architecture design Contribute to the design specifications that are in compliance with established coding quality standard of the company. To consult or support the project teams and clients on technical perspectives To support for presales activities (R&D, estimate, pilot, etc), technical interviews To perform trainings/seminars for the company To develop the new skills for project teams if any new technologies required based on the project roadmap.",
+      "userapply": ""
     },
     {
-      "id": "3",
-      "image": "https://cdn.itviec.com/employers/lg-development-center-vietnam/logo/w170/kb3U11PfmJFtdPgCEMaUJMNn/lg-development-center-vietnam-logo.png",
-      "companyName": "LG Development Center Vietnam",
-      "date": "2 ngày trước",
-      "title": "Production Application Engineer",
-      "detail": "As member of Software Development team, you will be responsible for researching and developing applications for Car Infotainment, AVN (Audio Video Navigation) system, Cluster and Telematics as below: • Develop automotive products and technologies (production  Applications); • Responsible for software delivery to head quarter; • Generate reports, communicate with local managements and head quarter."
+      "id": "b89987eb2b1964f96cd796c0dcf5a864",
+      "companyid": "c4ca4238a0b923820dcc509a6f75849b",
+      "date": "Mon May 25 2020 11:08:24 GMT+0700 (Giờ Đông Dương)",
+      "companyName": "Toshiba",
+      "image": "https://cdn.itviec.com/photos/26962/processed_headline_photo/toshiba-software-development-viet-nam-co-ltd-tuyen-dung-viec-lam-IT-headline_photo.jpg",
+      "title": "Java Developer",
+      "vacancies": "Java",
+      "amount": "5 người",
+      "description": "Code",
+      "salary": "5 triệu",
+      "address": "Hà Nội",
+      "detail": "Không"
     }
   ]
 }

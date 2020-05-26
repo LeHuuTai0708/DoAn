@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { RecruitmentDetailPage } from '../recruitment-detail/recruitment-detail';
 
 /**
  * Generated class for the NotificationPage page.
@@ -14,12 +15,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'notification.html',
 })
 export class NotificationPage {
-  //Notification : string[] = ["1","2","3"];
-  Notification : string[] = [];
+  Notification : string[] = ["1","2","3"];
+  //Notification : string[] = [];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NotificationPage');
+  }
+  itemNotification(){
+    this.navCtrl.push(RecruitmentDetailPage);
   }
 }

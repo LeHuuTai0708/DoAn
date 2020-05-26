@@ -118,4 +118,14 @@ export class RestProvider {
         });
     });
   }
+  getRecruitmentInfomation(id : String){
+    return new Promise(resolve => {
+      this.http.get(this.apiUrl + "/recruitment/" + id).subscribe(data => {
+        resolve(data);
+      },
+        err => {
+          console.log(err);
+        });
+    });
+  }
 }

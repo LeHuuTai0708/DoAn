@@ -1,3 +1,4 @@
+import { ListApplicationPage } from './../pages/list-application/list-application';
 import { LoginPage } from './../pages/login/login';
 import { CandidatePage } from './../pages/candidate/candidate';
 import { RecruitmentPage } from './../pages/recruitment/recruitment';
@@ -39,7 +40,8 @@ import { UpdateAccountPage } from '../pages/update-account/update-account';
     ProfileScreenPage,
     RecruitmentDetailPage,
     CompanyDetailPage,
-    UpdateAccountPage
+    UpdateAccountPage,
+    ListApplicationPage
 
   ],
   imports: [
@@ -64,7 +66,8 @@ import { UpdateAccountPage } from '../pages/update-account/update-account';
     ProfileScreenPage,
     RecruitmentDetailPage,
     CompanyDetailPage,
-    UpdateAccountPage
+    UpdateAccountPage,
+    ListApplicationPage
   ],
   providers: [
     StatusBar,

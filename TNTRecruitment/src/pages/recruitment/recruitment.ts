@@ -54,15 +54,12 @@ export class RecruitmentPage {
     console.log('ionViewDidLoad RecruitmentPage');
   }
 
-  presentAlert() {
-    this.navCtrl.push(RecruitmentDetailPage);
-  }
   CreateRecruitment() {
     this.navCtrl.push(AddRecruitmentPage);
   }
 
-  RecruitmentDetail(){
-    this.navCtrl.push(RecruitmentDetailPage);
+  RecruitmentDetail(id){
+    this.navCtrl.push(RecruitmentDetailPage,{id : id});
   }
 
   DetailCompany(id)
