@@ -37,16 +37,16 @@
       <ion-card-content text-wrap>
         <p>{{recruitment?.detail}}</p>
       </ion-card-content>
-      <ion-buttons class="custombuttons1" *ngIf="check">
+      <ion-buttons class="custombuttons1" *ngIf="!check">
         <button class='custom1' ion-button round outline color="secondary" (click)="Apply($event)">
-          Chấp nhận
+          Ứng tuyển ngay
         </button></ion-buttons>
     </ion-item>
-    <ion-grid>
-      <ion-item *ngIf="!check">
+    <ion-grid  *ngIf="check">
+      <ion-item>
         <ion-label color="secondary">Ứng viên</ion-label>
-      </ion-item>
-      <ion-row *ngIf="!check">
+      </ion-item> 
+      <ion-row>
         <div *ngFor="let item of userList ; let i=index">
           <div *ngIf="i < 5">
             <ion-avatar class="icon-avatar">
