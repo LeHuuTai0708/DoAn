@@ -6,45 +6,46 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title class='navcolor' >Ứng viên</ion-title>
+    <ion-title class='navcolor'>Ứng viên</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
+  <ion-img class = "background" src="assets/imgs/homebg.png"></ion-img>
+  <ion-list *ngIf="check">
     <ion-item>
-<button (click)="ProScreen($event)" ion-item>
-  <ion-icon class = 'icon' color ="secondary" name = "people-outline"></ion-icon>
-     Tất cả hồ sơ
-</button>
+      <button (click)="ProScreen($event)" ion-item>
+        <ion-icon class='icon' color="secondary" name="people-outline"></ion-icon>
+        Tất cả tin đã đăng
+      </button>
     </ion-item>
     <ion-item>
       <ion-buttons>
-<button  ion-item>
-  <ion-icon class = 'icon' color ="secondary"name = "pricetag-outline"></ion-icon>
-     Hồ sơ ứng tuyển
-</button>
-</ion-buttons>
+        <button ion-item>
+          <ion-icon class='icon' color="secondary" name="pricetag-outline"></ion-icon>
+          Hồ sơ ứng tuyển
+        </button>
+      </ion-buttons>
     </ion-item>
     <ion-item>
-<button  ion-item>
-  <ion-icon class = 'icon' color ="secondary"name = "heart-outline"></ion-icon>
-     Hồ sơ đã lưu
-</button>
+      <button ion-item>
+        <ion-icon class='icon' color="secondary" name="videocam-outline"></ion-icon>
+        Hồ sơ đã hẹn phỏng vấn
+      </button>
+    </ion-item>
+  </ion-list>
+  <ion-list *ngIf="!check">
+    <ion-item>
+      <button (click)="ProScreen($event)" ion-item>
+        <ion-icon class='icon' color="secondary" name="people-outline"></ion-icon>
+        Tin đã ứng tuyển
+      </button>
     </ion-item>
     <ion-item>
-<button  ion-item>
-  <ion-icon class = 'icon' color ="secondary" name = "eye-outline"></ion-icon>
-     Hồ sơ đã xem thông tin liên hệ
-</button>
+      <button ion-item>
+        <ion-icon class='icon' color="secondary" name="videocam-outline"></ion-icon>
+        Tin đã hẹn phỏng vấn
+      </button>
     </ion-item>
-    <ion-item>
-<button  ion-item>
-  <ion-icon class = 'icon' color ="secondary"name = "videocam-outline"></ion-icon>
-     Hồ sơ đã phỏng vấn
-</button>
-    </ion-item>
-
-
-</ion-list>
+  </ion-list>
 </ion-content>
