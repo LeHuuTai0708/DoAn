@@ -4,64 +4,37 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header >
-  <ion-navbar >
-    <ion-title  class='navcolor'  >Trang chủ</ion-title>
+<ion-header>
+  <ion-navbar>
+    <ion-title class='navcolor'>Trang chủ</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding >
-  <ion-img class = "background" src="assets/imgs/homebg.png"></ion-img>
-  <ion-grid>
-    <ion-row>
-      <ion-col class='my-thin-col'>
-        <ion-card (click)="Recruitment($event)">
+<ion-content padding>
+  <ion-img class="background" src="assets/imgs/2.jpg"></ion-img>
+  <ion-grid class='padgrid'>
+    <ion-slides class='padslide' effect="bullets" paginationType="fraction">
+      <ion-slide *ngFor='let item of RecruitmentData'>
+        <ion-card class='slides'>
+          <ion-item class='padbutton'>
+            <button (click)="RecruitmentDetail1()" ion-button icon-start clear item-end color="secondary"
+              style="font-size:16px">
+              Xem thêm
+            </button>
+            <ion-avatar (click)="DetailCompany(item?.id)" item-start>
+              <img src={{item?.image}}>
+            </ion-avatar>
+            <h2 (click)="DetailCompany(item?.id)" class="ellipsiscom">{{item?.companyName}}</h2>
+            <p (click)="DetailCompany(item?.id)">{{item?.date}}</p>
+          </ion-item>
           <ion-card-header>
-            <ion-icon name="person"></ion-icon>
-            <ion-card-title style="font-size:18px">TUYỂN DỤNG</ion-card-title>
+            <ion-card-title text-wrap>{{item?.title}}</ion-card-title>
           </ion-card-header>
-          <ion-card-content>
-            0 người đang hoạt động
+          <ion-card-content text-wrap class="limitedText">
+            <p class="ellipsis">{{item?.detail}}</p>
           </ion-card-content>
         </ion-card>
-      </ion-col>
-      <ion-col class='my-thin-col'>
-        <ion-card (click)="Candidate($event)">
-          <ion-card-header>
-            <ion-icon name="person"></ion-icon>
-            <ion-card-title style="font-size:18px">ỨNG VIÊN</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            0 người đang hoạt động
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col class='my-thin-col'>
-        <ion-card (click)="Notification($event)">
-          <ion-card-header>
-            <div>
-              <ion-icon name="person"></ion-icon>
-            </div>
-            <ion-card-title style="font-size:18px">THÔNG BÁO</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            0 người đang hoạt động
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col class='my-thin-col'>
-        <ion-card (click)="Account($event)">
-          <ion-card-header>
-            <ion-icon name="person"></ion-icon>
-            <ion-card-title style="font-size:18px">THÔNG TIN</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            0 người đang hoạt động
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
+      </ion-slide>
+    </ion-slides>
   </ion-grid>
 </ion-content>
