@@ -13,26 +13,24 @@
 <ion-content padding>
   <ion-img class = "background" src="assets/imgs/homebg.png"></ion-img>
   <ion-list *ngIf="check">
-    <ion-item>
+    <ion-item-divider class='temcolor'>
       <button (click)="ProScreen($event)" ion-item>
         <ion-icon class='icon' color="secondary" name="people-outline"></ion-icon>
         Tất cả tin đã đăng
       </button>
-    </ion-item>
-    <ion-item>
-      <ion-buttons>
+    </ion-item-divider>
+    <ion-item-divider class='temcolor'>     
         <button ion-item>
           <ion-icon class='icon' color="secondary" name="pricetag-outline"></ion-icon>
           Hồ sơ ứng tuyển
-        </button>
-      </ion-buttons>
-    </ion-item>
-    <ion-item>
+        </button>     
+    </ion-item-divider>
+    <ion-item-divider class='temcolor'>
       <button ion-item>
         <ion-icon class='icon' color="secondary" name="videocam-outline"></ion-icon>
         Hồ sơ đã hẹn phỏng vấn
       </button>
-    </ion-item>
+    </ion-item-divider>
   </ion-list>
   <ion-list *ngIf="!check">
     <ion-item>
